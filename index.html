@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROUTINE-11 REFORM MOVEMENTS, EVOLUTION & GENETICS | DAROGA/POLICE/BPSC/BSSC | YT-DREAMDOSE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0a0f2b; --navy2:#141c47; --indigo:#1d2761; --gold:#f2b705; --amber:#ff7a29;
+  --green:#2fd48a; --red:#ff4d5e; --cream:#f6f1e4; --dim:#aab0d6;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; min-height:100vh; font-family:'Hind',sans-serif;
+  background:radial-gradient(circle at 20% 0%,var(--indigo),var(--navy) 60%);
+  color:var(--cream); display:flex; flex-direction:column; align-items:center;
+}
+h1,h2,h3,.disp{font-family:'Baloo 2',cursive;}
+.watermark{
+  position:sticky; top:0; z-index:50; width:100%; text-align:center;
+  background:linear-gradient(90deg,var(--gold),var(--amber));
+  color:#1a0f00; font-family:'Baloo 2',cursive; font-weight:800;
+  letter-spacing:.5px; text-transform:uppercase; padding:10px 8px;
+  font-size:clamp(13px,2.4vw,18px); box-shadow:0 4px 14px rgba(0,0,0,.4);
+}
+.wrap{width:100%; max-width:760px; padding:18px 16px 60px;}
+.hero{text-align:center; padding:28px 10px 10px;}
+.hero h1{font-size:clamp(28px,6vw,42px); margin:6px 0; color:var(--gold); text-shadow:0 2px 0 rgba(0,0,0,.3);}
+.hero p{color:var(--dim); font-size:15px; margin:4px 0 20px;}
+.card{
+  background:linear-gradient(160deg,var(--navy2),var(--indigo));
+  border:1px solid rgba(242,183,5,.25); border-radius:18px; padding:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.35); margin-bottom:16px;
+}
+.btn{
+  display:inline-block; cursor:pointer; border:none; border-radius:12px;
+  padding:14px 26px; font-family:'Baloo 2',cursive; font-weight:700; font-size:17px;
+  background:linear-gradient(90deg,var(--gold),var(--amber)); color:#1a0f00;
+  box-shadow:0 6px 0 #b5790a; transition:transform .1s;
+}
+.btn:active{transform:translateY(4px); box-shadow:0 2px 0 #b5790a;}
+.btn.secondary{background:transparent; color:var(--gold); border:2px solid var(--gold); box-shadow:none;}
+.center{text-align:center;}
+input[type=text]{
+  width:100%; padding:12px 14px; border-radius:10px; border:1px solid rgba(255,255,255,.2);
+  background:rgba(255,255,255,.06); color:var(--cream); font-size:16px; margin-bottom:14px;
+}
+.taghead{
+  display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; gap:10px; flex-wrap:wrap;
+}
+.tagline{
+  font-family:'Baloo 2',cursive; font-weight:700; color:var(--amber); font-size:18px;
+}
+.cat-tag{
+  display:inline-block; background:rgba(242,183,5,.15); border:1px solid rgba(242,183,5,.4);
+  color:var(--gold); padding:4px 10px; border-radius:20px; font-size:12px; font-weight:600;
+}
+.progress{color:var(--dim); font-size:13px;}
+.timer-wrap{display:flex; justify-content:center; margin:6px 0 14px;}
+.timer-ring{
+  --pct:100; width:78px; height:78px; border-radius:50%;
+  background:conic-gradient(var(--green) calc(var(--pct)*1%), rgba(255,255,255,.08) 0);
+  display:flex; align-items:center; justify-content:center; transition:background .3s linear;
+}
+.timer-ring.warn{background:conic-gradient(var(--red) calc(var(--pct)*1%), rgba(255,255,255,.08) 0);}
+.timer-inner{
+  width:62px; height:62px; border-radius:50%; background:var(--navy2);
+  display:flex; align-items:center; justify-content:center; font-family:'Baloo 2',cursive;
+  font-weight:700; font-size:20px; color:var(--cream);
+}
+.motivate{text-align:center; color:var(--dim); font-size:14px; margin:0 0 14px; font-style:italic;}
+.qtext{font-size:17px; line-height:1.55; margin-bottom:16px;}
+.qtext b{color:var(--gold);}
+.matchbox{display:flex; gap:14px; margin-bottom:16px; flex-wrap:wrap;}
+.matchcol{flex:1; min-width:140px; background:rgba(255,255,255,.04); border-radius:10px; padding:10px;}
+.matchcol h4{margin:0 0 8px; color:var(--amber); font-size:14px;}
+.matchrow{font-size:14px; padding:4px 0; border-bottom:1px dashed rgba(255,255,255,.1);}
+.options{display:flex; flex-direction:column; gap:10px;}
+.opt{
+  text-align:left; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.15);
+  color:var(--cream); border-radius:12px; padding:13px 16px; font-size:15px; cursor:pointer;
+  transition:.15s; line-height:1.4;
+}
+.opt:hover{background:rgba(242,183,5,.12); border-color:var(--gold);}
+.opt.correct{background:rgba(47,212,138,.2); border-color:var(--green); color:#eafff5;}
+.opt.wrong{background:rgba(255,77,94,.2); border-color:var(--red); color:#ffecee;}
+.opt[disabled]{cursor:default;}
+.result{margin-top:16px; padding:14px; border-radius:12px; font-size:15px; line-height:1.5;}
+.result.ok{background:rgba(47,212,138,.12); border:1px solid rgba(47,212,138,.4);}
+.result.bad{background:rgba(255,77,94,.12); border:1px solid rgba(255,77,94,.4);}
+.result h3{margin:0 0 8px; font-family:'Baloo 2',cursive;}
+.result.ok h3{color:var(--green);}
+.result.bad h3{color:var(--red);}
+.next-row{margin-top:16px; text-align:center;}
+.overlay{
+  position:fixed; inset:0; background:rgba(5,8,25,.85); display:flex; align-items:center;
+  justify-content:center; z-index:100; padding:20px;
+}
+.board{
+  background:linear-gradient(160deg,var(--navy2),var(--indigo)); border:2px solid var(--gold);
+  border-radius:20px; padding:30px 26px; max-width:380px; width:100%; text-align:center;
+  box-shadow:0 20px 60px rgba(0,0,0,.6);
+}
+.board h2{color:var(--gold); margin:0 0 14px;}
+.board .stat{display:flex; justify-content:space-between; font-size:16px; margin:8px 0;}
+.board .comment{margin:16px 0; color:var(--amber); font-weight:600;}
+.scorebar{
+  display:flex; justify-content:space-between; color:var(--dim); font-size:13px; margin-bottom:10px;
+}
+.scorebar b{color:var(--gold);}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;}}
+</style>
+</head>
+<body>
+<div class="watermark">🔥 YT-DREAMDOSE (ROUTINE-11): DAROGA/POLICE/BPSC/BSSC 🔥</div>
+<div class="wrap" id="app"></div>
+
+<script>
+function opt(en,hi){return {en,hi};}
+function Q(cat,en,hi,options,correct,exp_en,exp_hi,matchTable,tip){
+  return {cat,en,hi,options,correct,exp_en,exp_hi,matchTable:matchTable||null,tip:tip||null};
+}
+function stOpt(s){
+  const n=s.split(",");
+  if(n.length===4)return opt("1, 2, 3 and 4","1, 2, 3 और 4");
+  const last=n.pop();
+  const en=n.length?n.join(", ")+" and "+last+" only":last+" only";
+  const hi=n.length?"केवल "+n.join(", ")+" और "+last:"केवल "+last;
+  return opt(en,hi);
+}
+function SQ(cat,tEn,tHi,sEn,sHi,ans,correct,expEn,expHi,tip){
+  const en=tEn+"<br>"+sEn.map((s,i)=>(i+1)+". "+s).join("<br>")+"<br>Which of the statements given above are correct?";
+  const hi=tHi+"<br>"+sHi.map((s,i)=>(i+1)+". "+s).join("<br>")+"<br>उपर्युक्त में से कौन-से कथन सही हैं?";
+  return Q(cat,en,hi,ans.map(stOpt),correct,expEn,expHi,null,tip);
+}
+function MQ(cat,tEn,tHi,left,right,ans,correct,expEn,expHi,tip){
+  return Q(cat,tEn,tHi,ans.map(a=>opt(a.replace(/,/g,", "),a.replace(/,/g,", "))),correct,expEn,expHi,{left:left,right:right},tip);
+}
+const RF="Social-Religious Reform Movements / सामाजिक-धार्मिक सुधार आंदोलन";
+const EV="Evolution / जैव विकास";
+const MD="Mendelian Genetics / मेंडेलीय आनुवंशिकी";
+function P(cat,en,hi,arr,c,eEn,eHi,tip){return Q(cat,en,hi,arr.map(x=>{const p=x.split(" / ");return opt(p[0],p.length>1?p.slice(1).join(" / "):p[0]);}),c,eEn,eHi,null,tip);}
+const TOTAL_TIME=120;
+
+const QUESTIONS=[
+
+SQ(RF,"Statements regarding Raja Ram Mohan Roy and Brahmo Samaj:","राजा राममोहन राय और ब्रह्म समाज के संबंध में कथन:",
+ ["Raja Ram Mohan Roy published 'Gift to Monotheists' (Tuhfat-ul-Muwahhidin) in Persian in 1809.","Atmiya Sabha was founded by Raja Ram Mohan Roy in Calcutta in 1814.","Brahmo Sabha was established in August 1828, which later came to be known as Brahmo Samaj.","Raja Ram Mohan Roy supported idol worship and rituals in his reform movement."],
+ ["राजा राममोहन राय ने 1809 में फारसी में 'एकेश्वरवादियों को उपहार' (तुहफत-उल-मुवाहिदीन) प्रकाशित किया।","आत्मीय सभा की स्थापना राजा राममोहन राय द्वारा 1814 में कलकत्ता में की गई थी।","ब्रह्म सभा की स्थापना अगस्त 1828 में हुई, जिसे बाद में ब्रह्म समाज के नाम से जाना गया।","राजा राममोहन राय ने अपने सुधार आंदोलन में मूर्तिपूजा और कर्मकांडों का समर्थन किया।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because Raja Ram Mohan Roy strongly opposed idol worship, polytheism and meaningless rituals.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि राजा राममोहन राय ने मूर्तिपूजा, बहुदेववाद और निरर्थक कर्मकांडों का कड़ा विरोध किया था।",
+ "Brahmo Sabha (1828) → Brahmo Samaj (1830)."),
+
+SQ(RF,"Statements regarding the Abolition of Sati:","सती प्रथा के उन्मूलन के संबंध में कथन:",
+ ["Lord William Bentinck promulgated Regulation XVII in December 1829 declaring Sati illegal.","The ban on Sati was initially applied to Bengal Presidency and later extended to Madras and Bombay.","Raja Ram Mohan Roy campaigned against Sati using Hindu scriptures to show it lacked religious sanction.","Radhakant Deb actively supported Lord William Bentinck in abolishing Sati."],
+ ["लॉर्ड विलियम बेंटिक ने दिसंबर 1829 में नियमन XVII लागू कर सती प्रथा को अवैध घोषित किया।","सती प्रथा पर प्रतिबंध शुरू में बंगाल प्रेसीडेंसी में लागू हुआ और बाद में मद्रास व बॉम्बे में विस्तारित किया गया।","राजा राममोहन राय ने यह दिखाने के लिए शास्त्रों का उपयोग किया कि सती प्रथा को धार्मिक स्वीकृति प्राप्त नहीं थी।","राधाकांत देव ने सती प्रथा के उन्मूलन में लॉर्ड विलियम बेंटिक का सक्रिय समर्थन किया।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because Radhakant Deb formed the 'Dharma Sabha' and opposed Bentinck's anti-Sati law.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि राधाकांत देव ने 'धर्म सभा' बनाकर बेंटिक के सती-विरोधी कानून का विरोध किया था।",
+ "Sati banned: Regulation XVII, 1829."),
+
+SQ(RF,"Statements regarding Young Bengal Movement:","यंग बंगाल आंदोलन के संबंध में कथन:",
+ ["Henry Louis Vivian Derozio was the inspirer and leader of the Young Bengal Movement.","Derozio served as a professor of history and philosophy at Hindu College, Calcutta.","The Derozians were deeply influenced by the French Revolution and radical freethought.","The Young Bengal Movement successfully mobilized the rural peasant masses across Bengal."],
+ ["हेनरी लुई विवियन डिरोज़ियो यंग बंगाल आंदोलन के प्रेरणास्रोत और नेता थे।","डिरोज़ियो ने हिंदू कॉलेज, कलकत्ता में इतिहास और दर्शनशास्त्र के प्रोफेसर के रूप में कार्य किया।","डिरोज़ियन फ्रांसीसी क्रांति और कट्टरपंथी स्वतंत्र विचारों से गहराई से प्रभावित थे।","यंग बंगाल आंदोलन ने पूरे बंगाल में ग्रामीण किसान जनता को सफलतापूर्वक एकजुट किया।"],
+ ["1,2,3","2,4","1,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because the movement remained limited to urban educated youth and did not connect with peasants.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि यह आंदोलन केवल शहरी शिक्षित युवाओं तक सीमित रहा और किसानों से नहीं जुड़ सका।",
+ "Derozio = Young Bengal (Hindu College)."),
+
+SQ(RF,"Statements regarding Debendranath Tagore and Tattvabodhini Sabha:","देवेंद्रनाथ टैगोर और तत्वबोधिनी सभा के संबंध में कथन:",
+ ["Debendranath Tagore founded the Tattvabodhini Sabha in 1839 at Calcutta.","Tattvabodhini Patrika was published in Bengali to promote systematic study of India's past.","Debendranath Tagore joined the Brahmo Samaj in 1842 and gave it a new organizational shape.","Tattvabodhini Sabha was specifically created to oppose all educational reforms of Ishwar Chandra Vidyasagar."],
+ ["देवेंद्रनाथ टैगोर ने 1839 में कलकत्ता में तत्वबोधिनी सभा की स्थापना की।","भारत के अतीत के व्यवस्थित अध्ययन को बढ़ावा देने के लिए बंगाली में 'तत्वबोधिनी पत्रिका' प्रकाशित की गई।","देवेंद्रनाथ टैगोर 1842 में ब्रह्म समाज में शामिल हुए और इसे एक नया संगठनात्मक रूप दिया।","तत्वबोधिनी सभा विशेष रूप से ईश्वर चंद्र विद्यासागर के शैक्षणिक सुधारों का विरोध करने के लिए बनाई गई थी।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because Ishwar Chandra Vidyasagar was himself a member of the Tattvabodhini Sabha and associated with its reforms.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि ईश्वर चंद्र विद्यासागर स्वयं तत्वबोधिनी सभा के सदस्य थे और इसके सुधारों से जुड़े थे।",
+ "Tattvabodhini Sabha 1839 → Debendranath joins Brahmo Samaj 1842."),
+
+SQ(RF,"Statements regarding Keshab Chandra Sen and Schism in Brahmo Samaj:","केशव चंद्र सेन और ब्रह्म समाज में विभाजन के संबंध में कथन:",
+ ["Keshab Chandra Sen was made the Acharya of Brahmo Samaj by Debendranath Tagore in 1858.","Differences between Keshab and Debendranath led to the first split in Brahmo Samaj in 1866.","Keshab Chandra Sen founded the 'Brahmo Samaj of India', while Tagore's group was called 'Adi Brahmo Samaj'.","Keshab Chandra Sen strictly observed the Native Marriage Act 1872 and never married off his minor daughter."],
+ ["केशव चंद्र सेन को 1858 में देवेंद्रनाथ टैगोर द्वारा ब्रह्म समाज का आचार्य बनाया गया था।","केशव और देवेंद्रनाथ के बीच मतभेदों के कारण 1866 में ब्रह्म समाज में पहला विभाजन हुआ।","केशव चंद्र सेन ने 'भारतवर्षीय ब्रह्म समाज' की स्थापना की, जबकि टैगोर का समूह 'आदि ब्रह्म समाज' कहलाया।","केशव चंद्र सेन ने 1872 के नेटिव मैरिज एक्ट का सख्ती से पालन किया और कभी अपनी नाबालिग बेटी का विवाह नहीं किया।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because in 1878 Keshab married off his 13-year-old daughter to the Maharaja of Cooch Behar, causing the second split and the 'Sadharan Brahmo Samaj'.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि केशव चंद्र सेन ने 1878 में अपनी 13 वर्षीय पुत्री का विवाह कूचबिहार के महाराजा से कर दिया, जिससे 1878 में 'साधारण ब्रह्म समाज' का दूसरा विभाजन हुआ।",
+ "Splits: 1866 (Brahmo Samaj of India) · 1878 (Sadharan Brahmo Samaj)."),
+
+SQ(RF,"Statements regarding Ishwar Chandra Vidyasagar:","ईश्वर चंद्र विद्यासागर के संबंध में कथन:",
+ ["Vidyasagar's crusade led to the enactment of the Hindu Widows' Remarriage Act, 1856.","Lord Dalhousie drafted the Widow Remarriage Act, which was passed during Lord Canning's tenure.","Vidyasagar served as the Principal of Sanskrit College, Kolkata.","Vidyasagar restricted Sanskrit College admissions exclusively to Brahmin students."],
+ ["विद्यासागर के प्रयासों से 'हिंदू विधवा पुनर्विवाह अधिनियम, 1856' पारित हुआ।","लॉर्ड डलहौजी ने इस अधिनियम का प्रारूप तैयार किया, जिसे लॉर्ड कैनिंग के कार्यकाल में पारित किया गया।","विद्यासागर ने संस्कृत कॉलेज, कोलकाता के प्रधानाचार्य के रूप में कार्य किया।","विद्यासागर ने संस्कृत कॉलेज में प्रवेश केवल ब्राह्मण छात्रों तक ही सीमित रखा।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because Vidyasagar opened the doors of Sanskrit College to non-Brahmin (e.g. Kayastha) students as well.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि विद्यासागर ने संस्कृत कॉलेज के दरवाजे गैर-ब्राह्मण (कायस्थ आदि) छात्रों के लिए भी खोल दिए थे।",
+ "Widow Remarriage Act 1856 — Vidyasagar."),
+
+SQ(RF,"Statements regarding Swami Dayanand Saraswati and Arya Samaj:","स्वामी दयानंद सरस्वती और आर्य समाज के संबंध में कथन:",
+ ["Arya Samaj was founded by Swami Dayanand Saraswati in Bombay in 1875.","Swami Dayanand gave the famous call 'Go Back to the Vedas'.","Dayanand Saraswati wrote the famous work 'Satyarth Prakash' in Hindi.","Arya Samaj completely rejected the doctrine of Karma and Reincarnation."],
+ ["आर्य समाज की स्थापना 1875 में बॉम्बे में स्वामी दयानंद सरस्वती द्वारा की गई थी।","स्वामी दयानंद ने प्रसिद्ध नारा 'वेदों की ओर लौटो' दिया।","दयानंद सरस्वती ने प्रसिद्ध कृति 'सत्यार्थ प्रकाश' की रचना हिंदी में की।","आर्य समाज ने कर्म और पुनर्जन्म के सिद्धांत को पूरी तरह से खारिज कर दिया।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because Swami Dayanand and Arya Samaj accepted the doctrines of Karma and Reincarnation.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि स्वामी दयानंद और आर्य समाज ने कर्म और पुनर्जन्म (Reincarnation) के सिद्धांतों को स्वीकार किया था।",
+ "Arya Samaj 1875 Bombay · Satyarth Prakash (Hindi)."),
+
+SQ(RF,"Statements regarding Shuddhi Movement and DAV Movement:","शुद्धि आंदोलन और डीएवी (DAV) आंदोलन के संबंध में कथन:",
+ ["Shuddhi Movement was started by Arya Samaj to reconvert people who had converted to other religions.","The headquarters of Arya Samaj was shifted to Lahore in 1877.","Dayanand Anglo-Vedic (DAV) College was first established at Lahore in 1886 by Lala Hansraj.","Swami Shraddhanand established Gurukul at Kangri (Haridwar) in 1902 favoring western science over Vedas."],
+ ["शुद्धि आंदोलन आर्य समाज द्वारा अन्य धर्मों में धर्मांतरित लोगों को पुनः वापस लाने के लिए शुरू किया गया था।","आर्य समाज का मुख्यालय 1877 में लाहौर स्थानांतरित किया गया था।","दयानंद एंग्लो-वैदिक (DAV) कॉलेज की स्थापना पहली बार 1886 में लाहौर में लाला हंसराज द्वारा की गई थी।","स्वामी श्रद्धानंद ने 1902 में कांगड़ी (हरिद्वार) में गुरुकुल स्थापित किया जिसमें पश्चिमी विज्ञान को वेदों पर प्राथमिकता दी गई।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because Shraddhanand's Gurukul prioritised Vedic education in a traditional setting (opposed to the Western style).",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि स्वामी श्रद्धानंद के गुरुकुल कांगड़ी में वैदिक शिक्षा को पारंपरिक माहौल में प्राथमिकता दी गई थी (पश्चिमी शैली के खिलाफ)।",
+ "DAV = Lala Hansraj (Lahore, 1886) · Gurukul Kangri = Shraddhanand (1902)."),
+
+SQ(RF,"Statements regarding Swami Vivekananda and Ramakrishna Mission:","स्वामी विवेकानंद और रामकृष्ण मिशन के संबंध में कथन:",
+ ["Swami Vivekananda founded the Ramakrishna Mission in May 1897 at Belur near Calcutta.","Vivekananda attended the Parliament of Religions held at Chicago in September 1893.","Ramakrishna Mission combines social service and relief work with spiritual ideals.","Swami Vivekananda rejected Neo-Vedanta and condemned service to mankind."],
+ ["स्वामी विवेकानंद ने मई 1897 में कलकत्ता के पास बेलूर में रामकृष्ण मिशन की स्थापना की।","विवेकानंद ने सितंबर 1893 में शिकागो में आयोजित विश्व धर्म संसद में भाग लिया।","रामकृष्ण मिशन सामाजिक सेवा और राहत कार्य को आध्यात्मिक आदर्शों के साथ जोड़ता है।","स्वामी विवेकानंद ने नव-वेदांत को खारिज कर दिया और मानव सेवा की निंदा की।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because Vivekananda propagated Neo-Vedanta and gave the message that service to man is service to God.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि विवेकानंद ने नव-वेदांत का प्रचार किया और \"मानव सेवा ही ईश्वर सेवा है\" का संदेश दिया।",
+ "Ramakrishna Mission: 1897, Belur."),
+
+SQ(RF,"Statements regarding Jyotirao Phule and Satyashodhak Samaj:","ज्योतिराव फुले और सत्यशोधक समाज के संबंध में कथन:",
+ ["Jyotirao Phule founded the Satyashodhak Samaj in Maharashtra in September 1873.","Phule wrote the famous book 'Gulamgiri' in 1873 dedicated to the American movement against slavery.","Savitribai Phule, along with Jyotirao Phule, opened the first girls' school at Bhide Wada, Pune in 1848.","Satyashodhak Samaj advocated the mandatory mediation of Brahmin priests in marriage ceremonies."],
+ ["ज्योतिराव फुले ने सितंबर 1873 में महाराष्ट्र में सत्यशोधक समाज की स्थापना की।","फुले ने 1873 में प्रसिद्ध पुस्तक 'गुलामगिरी' लिखी जो अमेरिकी दासता-विरोधी आंदोलन को समर्पित थी।","सावित्रीबाई फुले और ज्योतिराव फुले ने 1848 में भिड़े वाडा, पुणे में लड़कियों का पहला स्कूल खोला।","सत्यशोधक समाज ने विवाह समारोहों में ब्राह्मण पुजारियों की मध्यस्थता को अनिवार्य माना।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because Satyashodhak Samaj rejected the mediation of Brahmin priests and rituals in marriages.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि सत्यशोधक समाज ने विवाहों में ब्राह्मण पुरोहितों की मध्यस्थता और कर्मकांडों को पूरी तरह से नकार दिया था।",
+ "Gulamgiri (1873) — Jyotirao Phule."),
+
+SQ(RF,"Statements regarding Western India Reformers (Paramahansa Mandali & Prarthana Samaj):","पश्चिम भारत के सुधारकों (परमहंस मंडली एवं प्रार्थना समाज) के संबंध में कथन:",
+ ["Paramahansa Mandali was founded in Bombay in 1849 by Dadoba Pandurang and Durgaram Mehtaji.","Prarthana Samaj was established in Bombay in 1867 by Dr. Atmaram Pandurang.","M.G. Ranade and R.G. Bhandarkar joined Prarthana Samaj and made it a prominent all-India reform body.","Paramahansa Mandali meetings were publicly conducted with open membership records."],
+ ["परमहंस मंडली की स्थापना 1849 में बॉम्बे में दादोबा पांडुरंग और दुर्गाराम मेहताजी द्वारा की गई थी।","प्रार्थना समाज की स्थापना 1867 में बॉम्बे में डॉ. आत्माराम पांडुरंग द्वारा की गई थी।","एम.जी. रानाडे और आर.जी. भंडारकर प्रार्थना समाज में शामिल हुए और इसे एक प्रमुख सुधार संस्था बनाया।","परमहंस मंडली की बैठकें सार्वजनिक रूप से आयोजित की जाती थीं और सदस्यता रिकॉर्ड खुला रहता था।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because the Paramahansa Mandali functioned as a secret society to avoid the wrath of the upper castes.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि परमहंस मंडली एक गुप्त समाज (secret society) की तरह काम करती थी ताकि उच्च जाति के कोप से बचा जा सके।",
+ "Paramahansa Mandali = secret society (1849)."),
+
+SQ(RF,"Statements regarding Sir Syed Ahmad Khan and Aligarh Movement:","सर सैयद अहमद खान और अलीगढ़ आंदोलन के संबंध में कथन:",
+ ["Sir Syed Ahmad Khan started the journal 'Tahzib-ul-Akhlaq' for social reform among Muslims.","He established the Mohammedan Anglo-Oriental (MAO) College at Aligarh in 1875.","MAO College later developed into the Aligarh Muslim University in 1920.","Sir Syed Ahmad Khan strongly encouraged Muslims to join the Indian National Congress in 1885."],
+ ["सर सैयद अहमद खान ने मुसलमानों में सामाजिक सुधार के लिए 'तहज़ीब-उल-अखलाक़' पत्रिका शुरू की।","उन्होंने 1875 में अलीगढ़ में मोहम्मडन एंग्लो-ओरिएंटल (MAO) कॉलेज की स्थापना की।","MAO कॉलेज बाद में 1920 में अलीगढ़ मुस्लिम विश्वविद्यालय के रूप में विकसित हुआ।","सर सैयद अहमद खान ने 1885 में मुसलमानों को भारतीय राष्ट्रीय कांग्रेस में शामिल होने के लिए दृढ़ता से प्रोत्साहित किया।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because Sir Syed advised Muslims to stay away from politics and the Congress.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि सर सैयद अहमद खान ने मुसलमानों को राजनीति और कांग्रेस से दूर रहने की सलाह दी थी।",
+ "Sir Syed: MAO 1875 → AMU 1920; anti-Congress."),
+
+SQ(RF,"Statements regarding the Deoband Movement:","देवबंद आंदोलन के संबंध में कथन:",
+ ["Deoband Movement was founded at Deoband (Saharanpur, UP) in 1866.","Mohammad Qasim Nanotavi and Rashid Ahmad Gangohi were the key founders of Deoband School.","Deoband Movement was an orthodox revivalist movement aimed at propagating pure Quranic teachings.","Deoband School welcomed the formation of Indian National Congress and issued a Fatwa supporting it."],
+ ["देवबंद आंदोलन की स्थापना 1866 में देवबंद (सहारनपुर, यूपी) में हुई थी।","मोहम्मद क़ासिम नानौतवी और रशीद अहमद गंगोही देवबंद स्कूल के प्रमुख संस्थापक थे।","देवबंद आंदोलन एक कट्टरपंथी पुनरुत्थानवादी आंदोलन था जिसका उद्देश्य शुद्ध कुरान की शिक्षाओं का प्रचार करना था।","देवबंद स्कूल ने भारतीय राष्ट्रीय कांग्रेस के गठन का स्वागत किया और इसका समर्थन करने वाला फतवा जारी किया।"],
+ ["1,2,3,4","1,2","3,4","1,2,3"],0,
+ "All four statements are correct. Unlike the Aligarh Movement, the Deoband Movement opposed the British and supported the formation of the Congress.",
+ "चारों कथन सही हैं। अलीगढ़ आंदोलन के विपरीत, देवबंद आंदोलन ने अंग्रेजों का विरोध किया और कांग्रेस के गठन का समर्थन किया।",
+ "Deoband = anti-British, pro-Congress; Aligarh = loyalist."),
+
+SQ(RF,"Statements regarding Theosophical Society and Annie Besant:","थियोसोफिकल सोसाइटी और एनी बेसेंट के संबंध में कथन:",
+ ["Theosophical Society was founded in New York in 1875 by Madam H.P. Blavatsky and Colonel H.S. Olcott.","The headquarters of the society was established at Adyar near Madras in 1882.","Annie Besant arrived in India in 1893 and became the President of the society after Olcott's death.","Annie Besant founded the Central Hindu College at Banaras in 1898, which later became BHU."],
+ ["थियोसोफिकल सोसाइटी की स्थापना 1875 में न्यूयॉर्क में मैडम एच.पी. ब्लावत्स्की और कर्नल एच.एस. ऑलकोट द्वारा की गई थी।","सोसाइटी का मुख्यालय 1882 में मद्रास के पास अड्यार में स्थापित किया गया था।","एनी बेसेंट 1893 में भारत आईं और ऑलकोट की मृत्यु के बाद सोसाइटी की अध्यक्ष बनीं।","एनी बेसेंट ने 1898 में बनारस में सेंट्रल हिंदू कॉलेज की स्थापना की, जो बाद में BHU बना।"],
+ ["1,2,3,4","1,2","2,3","1,3,4"],0,
+ "All four statements are historically correct.",
+ "थियोसोफिकल सोसाइटी और एनी बेसेंट के योगदान से जुड़े ये चारों कथन ऐतिहासिक रूप से सत्य हैं।",
+ "Theosophical Society: NY 1875 → Adyar 1882."),
+
+SQ(RF,"Statements regarding Sree Narayana Guru and SNDP Movement:","श्री नारायण गुरु और एसएनडीपी (SNDP) आंदोलन के संबंध में कथन:",
+ ["Sree Narayana Guru launched a reform movement among the backward Ezhavas of Kerala.","He installed a Shiva idol at Aruvippuram in 1888 to defy caste restriction on temple entry.","Sri Narayana Dharma Paripalana (SNDP) Yogam was registered in 1903.","Sree Narayana Guru gave the famous slogan 'One Caste, One Religion, One God for Man'."],
+ ["श्री नारायण गुरु ने केरल के पिछड़े इझावा समुदाय के बीच एक सुधार आंदोलन शुरू किया।","उन्होंने मंदिर प्रवेश पर जातिगत प्रतिबंध का विरोध करने के लिए 1888 में अरुविप्पुरम में एक शिव मूर्ति स्थापित की।","श्री नारायण धर्म परिपालन (SNDP) योगम को 1903 में पंजीकृत किया गया था।","श्री नारायण गुरु ने प्रसिद्ध नारा 'मानव के लिए एक जाति, एक धर्म, एक ईश्वर' दिया।"],
+ ["1,2,3,4","1,3","2,4","1,2,4"],0,
+ "All four statements are correct and relate to Sree Narayana Guru's social reform work in Kerala.",
+ "केरल के सामाजिक-धार्मिक सुधार में श्री नारायण गुरु और SNDP योगम से जुड़े चारों कथन सही हैं।",
+ "SNDP Yogam 1903 · Aruvippuram 1888."),
+
+SQ(RF,"Statements regarding Self-Respect Movement and E.V. Ramaswamy Naicker:","स्वाभिमान आंदोलन (Self-Respect Movement) और ई.वी. रामास्वामी नायकर के संबंध में कथन:",
+ ["Self-Respect Movement was started by E.V. Ramaswamy Naicker (Periyar) in Tamil Nadu in 1925.","Periyar launched the journal 'Kudi Arasu' in 1925 for spreading anti-caste propaganda.","The movement advocated weddings without Brahmin priests and religious rituals.","Periyar supported Manusmriti and advocated strict adherence to Varna system."],
+ ["स्वाभिमान आंदोलन तमिलनाडु में 1925 में ई.वी. रामास्वामी नायकर (पेरियार) द्वारा शुरू किया गया था।","पेरियार ने जाति-विरोधी प्रचार के लिए 1925 में 'कुडी अरासु' पत्रिका शुरू की।","आंदोलन ने ब्राह्मण पुरोहितों और धार्मिक कर्मकांडों के बिना विवाह का समर्थन किया।","पेरियार ने मनुस्मृति का समर्थन किया और वर्ण व्यवस्था के सख्त पालन की वकालत की।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because Periyar burned the Manusmriti and sharply criticised the Varna system.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि पेरियार ने मनुस्मृति को जलाया था और वर्ण व्यवस्था की कड़ी आलोचना की थी।",
+ "Periyar: Self-Respect Movement (1925) + Kudi Arasu."),
+
+SQ(RF,"Statements regarding Dr. B.R. Ambedkar and Depressed Classes Movements:","डॉ. बी.आर. अंबेडकर और दलित आंदोलनों के संबंध में कथन:",
+ ["Dr. B.R. Ambedkar established the Bahishkrit Hitakarini Sabha in Bombay in 1924.","He led the Mahad Satyagraha in 1927 to secure access to public water tanks for untouchables.","Ambedkar started the Marathi newspaper 'Mooknayak' in 1920 with the support of Shahu Maharaj.","Dr. B.R. Ambedkar supported separate electorates for Depressed Classes at the Round Table Conferences."],
+ ["डॉ. बी.आर. अंबेडकर ने 1924 में बॉम्बे में बहिष्कृत हितकारिणी सभा की स्थापना की।","उन्होंने अछूतों के लिए सार्वजनिक जल टैंकों तक पहुंच सुरक्षित करने के लिए 1927 में महाड़ सत्याग्रह का नेतृत्व किया।","अंबेडकर ने शाहू महाराज के सहयोग से 1920 में मराठी समाचार पत्र 'मूकनायक' शुरू किया।","डॉ. बी.आर. अंबेडकर ने गोलमेज सम्मेलनों में दलित वर्गों के लिए पृथक निर्वाचक मंडल का समर्थन किया।"],
+ ["1,2,3,4","1,2","3,4","1,2,3"],0,
+ "All four statements are correct and relate to Ambedkar's movement for Dalit rights.",
+ "डॉ. बी.आर. अंबेडकर के सामाजिक आंदोलन और दलित अधिकारों के लिए किए गए प्रयासों से जुड़े चारों कथन सही हैं।",
+ "Mooknayak 1920 · Bahishkrit Hitakarini Sabha 1924 · Mahad 1927."),
+
+SQ(RF,"Statements regarding Servants of India Society and Gopal Krishna Gokhale:","सर्वेंट्स ऑफ इंडिया सोसाइटी और गोपाल कृष्ण गोखले के संबंध में कथन:",
+ ["Servants of India Society was founded by Gopal Krishna Gokhale in 1905 at Pune.","The object of the society was to train national missionaries for the service of India.","Srinivasa Sastri succeeded Gokhale as the President of the society after Gokhale's death in 1915.","The members of the society took a vow to strictly abstain from taking part in social or educational work."],
+ ["सर्वेंट्स ऑफ इंडिया सोसाइटी की स्थापना गोपाल कृष्ण गोखले द्वारा 1905 में पुणे में की गई थी।","सोसाइटी का उद्देश्य भारत की सेवा के लिए राष्ट्रीय प्रचारकों को प्रशिक्षित करना था।","1915 में गोखले की मृत्यु के बाद श्रीनिवास शास्त्री सोसाइटी के अध्यक्ष बने।","सोसाइटी के सदस्यों ने सामाजिक या शैक्षणिक कार्यों में भाग न लेने की सख्त शपथ ली।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because the society's main work was social service, famine relief and spread of education.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि इस संस्था का मुख्य कार्य ही समाज सेवा, अकाल राहत और शिक्षा का प्रसार था।",
+ "Servants of India Society: Gokhale, 1905, Pune."),
+
+SQ(RF,"Statements regarding Parsi Reform Movement (Rahnumai Mazdayasnan Sabha):","पारसी सुधार आंदोलन (रहनुमाई मजदायासन सभा) के संबंध में कथन:",
+ ["Rahnumai Mazdayasnan Sabha was founded in Bombay in 1851.","Naoroji Furdonji, Dadabhai Naoroji, and S.S. Bengalee were prominent founders.","'Rast Goftar' (Truth Teller) was the journal started to spread the message of Parsi reform.","The movement actively advocated for child marriage and female seclusion among Parsis."],
+ ["रहनुमाई मजदायासन सभा की स्थापना 1851 में बॉम्बे में हुई थी।","नौरोजी फरदूनजी, दादाभाई नौरोजी और एस.एस. बंगाली इसके प्रमुख संस्थापक थे।","पारसी सुधार के संदेश को फैलाने के लिए 'रास्त गोफ्तार' (सत्यवादी) पत्रिका शुरू की गई थी।","आंदोलन ने पारसियों में बाल विवाह और पर्दा प्रथा का सक्रिय रूप से समर्थन किया।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because the Sabha strongly opposed purdah and child marriage and stressed education of Parsi women.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि इस सभा ने पर्दा प्रथा और बाल विवाह का पुरजोर विरोध किया तथा पारसी महिलाओं की शिक्षा पर जोर दिया।",
+ "Parsi reform: Rahnumai Mazdayasnan Sabha (1851) + Rast Goftar."),
+
+SQ(RF,"Statements regarding Veda Samaj and Southern India Reformers:","वेद समाज और दक्षिण भारतीय सुधारकों के संबंध में कथन:",
+ ["Veda Samaj was established in Madras in 1864, inspired by Brahmo Samaj.","K. Sridharalu Naidu was the key guiding spirit behind Veda Samaj in South India.","Kandukuri Veeresalingam is considered the 'Father of Renaissance in Andhra'.","Kandukuri Veeresalingam published the journal 'Vivekavardhini' to promote widow remarriage."],
+ ["ब्रह्म समाज से प्रेरित होकर 1864 में मद्रास में वेद समाज की स्थापना की गई थी।","के. श्रीधरालू नायडू दक्षिण भारत में वेद समाज के पीछे मुख्य मार्गदर्शक थे।","कंदुकुरी वीरेशलिंगम को 'आंध्र के पुनर्जागरण का पिता' माना जाता है।","कंदुकुरी वीरेशलिंगम ने विधवा पुनर्विवाह को बढ़ावा देने के लिए 'विवेकवर्धिनी' पत्रिका प्रकाशित की।"],
+ ["1,2,3,4","1,2","3,4","1,3,4"],0,
+ "All four statements are historically correct.",
+ "दक्षिण भारत में वेद समाज और कंदुकुरी वीरेशलिंगम से जुड़े चारों कथन ऐतिहासिक दृष्टि से पूर्णतः सत्य हैं।",
+ "Veeresalingam = Father of Andhra renaissance."),
+
+SQ(RF,"Statements regarding Temple Entry Movements in South India:","दक्षिण भारत में मंदिर प्रवेश आंदोलनों के संबंध में कथन:",
+ ["Vaikom Satyagraha (1924–25) was launched in Travancore demanding temple entry for untouchables.","K.P. Kesava Menon and T.K. Madhavan were key leaders of the Vaikom Satyagraha.","Mahatma Gandhi visited Vaikom in 1925 to support the satyagrahis.","Temple Entry Proclamation was issued by the Maharaja of Travancore in 1936."],
+ ["त्रावणकोर में अछूतों के लिए मंदिर प्रवेश की मांग को लेकर वायकोम सत्याग्रह (1924-25) शुरू किया गया था।","के.पी. केशव मेनन और टी.के. माधवन वायकोम सत्याग्रह के प्रमुख नेता थे।","महात्मा गांधी ने सत्याग्रहियों का समर्थन करने के लिए 1925 में वायकोम का दौरा किया।","त्रावणकोर के महाराजा द्वारा 1936 में मंदिर प्रवेश घोषणापत्र जारी किया गया था।"],
+ ["1,2,3,4","1,2","3,4","1,2,3"],0,
+ "All four statements about the Vaikom Satyagraha and the Travancore Temple Entry Proclamation are correct.",
+ "वायकोम सत्याग्रह और त्रावणकोर मंदिर प्रवेश घोषणापत्र से जुड़े चारों कथन पूरी तरह सत्य हैं।",
+ "Vaikom 1924-25 → Temple Entry Proclamation 1936."),
+
+SQ(RF,"Statements regarding Pandita Ramabai and Women's Reform Movements:","पंडिता रमाबाई और महिला सुधार आंदोलनों के संबंध में कथन:",
+ ["Pandita Ramabai founded the Arya Mahila Sabha at Pune in 1882.","She established the Sharada Sadan in Bombay in 1889 as a shelter for destitute widows.","Pandita Ramabai was awarded the Kaiser-i-Hind medal by the British government for community service.","Ramabai authored the famous critique titled 'The High-Caste Hindu Woman'."],
+ ["पंडिता रमाबाई ने 1882 में पुणे में आर्य महिला सभा की स्थापना की।","उन्होंने 1889 में बॉम्बे में बेसहारा विधवाओं के लिए 'शारदा सदन' की स्थापना की।","पंडिता रमाबाई को समाज सेवा के लिए ब्रिटिश सरकार द्वारा कैसर-ए-हिंद पदक से सम्मानित किया गया था।","रमाबाई ने 'द हाई-कास्ट हिंदू वूमन' शीर्षक से प्रसिद्ध आलोचनात्मक पुस्तक लिखी।"],
+ ["1,2,3,4","1,2","3,4","1,3,4"],0,
+ "All four statements about Pandita Ramabai are correct.",
+ "पंडिता रमाबाई के जीवन और महिला शिक्षा/पुनर्वास के लिए उनके द्वारा स्थापित संस्थानों से जुड़े चारों कथन सही हैं।",
+ "Ramabai: Arya Mahila Sabha 1882 · Sharada Sadan 1889."),
+
+SQ(RF,"Statements regarding Lokahitawadi (Gopal Hari Deshmukh):","लोकहितवादी (गोपाल हरि देशमुख) के संबंध में कथन:",
+ ["Gopal Hari Deshmukh is popularly known by his pen name 'Lokahitawadi'.","He wrote weekly articles in the Marathi journal 'Prabhakar' under the title 'Shatapatre'.","Lokahitawadi advocated modern secular education and socio-religious equality in Maharashtra.","He strongly opposed British rule and urged people to completely abandon western science."],
+ ["गोपाल हरि देशमुख अपने उपनाम 'लोकहितवादी' से लोकप्रिय हैं।","उन्होंने मराठी पत्रिका 'प्रभाकर' में 'शतपत्रे' शीर्षक से साप्ताहिक लेख लिखे।","लोकहितवादी ने महाराष्ट्र में आधुनिक धर्मनिरपेक्ष शिक्षा और सामाजिक-धार्मिक समानता की वकालत की।","उन्होंने ब्रिटिश शासन का कड़ा विरोध किया और लोगों में पश्चिमी विज्ञान को पूरी तरह से छोड़ने का आग्रह किया।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because Lokahitawadi was a supporter of Western rationalism and modern science.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि लोकहितवादी पश्चिमी तर्कवाद और आधुनिक विज्ञान के समर्थक थे।",
+ "Lokahitawadi = Shatapatre (Prabhakar)."),
+
+SQ(RF,"Statements regarding Age of Consent Act, 1891 and Child Marriage Restraint Act:","सम्मति आयु अधिनियम, 1891 और बाल विवाह निरोधक अधिनियम के संबंध में कथन:",
+ ["The Age of Consent Act 1891 raised the age of consent for girls for marriage from 10 to 12 years.","B.M. Malabari played a pioneering role through his agitation in passing the Age of Consent Act 1891.","Bal Gangadhar Tilak opposed the Age of Consent Act 1891 on grounds of foreign interference in religion.","Child Marriage Restraint Act 1929 (Sharda Act) fixed the marriage age at 14 for girls and 18 for boys."],
+ ["सम्मति आयु अधिनियम 1891 ने लड़कियों के विवाह के लिए सहमति की आयु 10 से बढ़ाकर 12 वर्ष कर दी।","बी.एम. मालाबारी ने अपने आंदोलन के माध्यम से 1891 का अधिनियम पारित कराने में अग्रणी भूमिका निभाई।","बाल गंगाधर तिलक ने धर्म में विदेशी हस्तक्षेप के आधार पर 1891 के अधिनियम का विरोध किया।","बाल विवाह निरोधक अधिनियम 1929 (शारदा एक्ट) ने लड़कियों के लिए विवाह की आयु 14 और लड़कों के लिए 18 तय की।"],
+ ["1,2,3,4","1,2","3,4","1,3"],0,
+ "All four statements about child-marriage reform legislation are correct.",
+ "भारत में बाल विवाह नियंत्रण हेतु पारित विधायिक सुधारों से जुड़े चारों कथन सही हैं।",
+ "Age of Consent 1891 (10→12) · Sharda Act 1929 (14/18)."),
+
+SQ(RF,"Statements regarding Ahmadiyya Movement:","अहमदिया आंदोलन के संबंध में कथन:",
+ ["Ahmadiyya Movement was founded by Mirza Ghulam Ahmad in 1889 in Punjab.","Mirza Ghulam Ahmad claimed to be the Messiah and an incarnation of Krishna.","The movement was based on principles of universal religion, peace, and human rights.","Ahmadiyya Movement supported holy war (Jihad) against all non-Muslims."],
+ ["अहमदिया आंदोलन की स्थापना 1889 में पंजाब में मिर्जा गुलाम अहमद द्वारा की गई थी।","मिर्जा गुलाम अहमद ने मसीहा और कृष्ण का अवतार होने का दावा किया।","यह आंदोलन सार्वभौमिक धर्म, शांति और मानव अधिकारों के सिद्धांतों पर आधारित था।","अहमदिया आंदोलन ने सभी गैर-मुसलमानों के खिलाफ धर्मयुद्ध (जिहाद) का समर्थन किया।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because Mirza Ghulam Ahmad opposed armed jihad and advocated peaceful propagation.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि मिर्जा गुलाम अहमद ने सशस्त्र जिहाद का विरोध किया और शांतिपूर्ण प्रसार की वकालत की।",
+ "Ahmadiyya (1889, Qadian, Punjab) — peaceful propagation."),
+
+SQ(RF,"Statements regarding Singh Sabha Movement:","सिंह सभा आंदोलन के संबंध में कथन:",
+ ["Singh Sabha Movement was founded at Amritsar in 1873.","It aimed to restore Sikhism to its pristine purity and promote Punjabi language and literature.","Khalsa College was established at Amritsar in 1892 through the efforts of Singh Sabha.","Akali Movement in the 1920s emerged as an offshoot of Singh Sabha to liberate Gurdwaras from corrupt Mahants."],
+ ["सिंह सभा आंदोलन की स्थापना 1873 में अमृतसर में हुई थी।","इसका उद्देश्य सिख धर्म को उसकी मूल शुद्धता में वापस लाना और पंजाबी भाषा का प्रचार करना था।","सिंह सभा के प्रयासों से 1892 में अमृतसर में खालसा कॉलेज की स्थापना की गई।","1920 के दशक का अकाली आंदोलन सिंह सभा के ही विस्तार के रूप में उभरा ताकि गुरुद्वारों को भ्रष्ट महंतुओं से मुक्त कराया जा सके।"],
+ ["1,2,3,4","1,2","3,4","1,2,3"],0,
+ "All four statements about the Singh Sabha and Akali movements are correct.",
+ "सिख धर्म सुधार से जुड़े सिंह सभा आंदोलन और अकाली आंदोलन से संबंधित चारों कथन सही हैं।",
+ "Singh Sabha 1873 → Khalsa College 1892 → Akali 1920s."),
+
+SQ(RF,"Statements regarding Tarabai Shinde and Pandita Ramabai:","ताराबाई शिंदे और महिला अधिकारों के संबंध में कथन:",
+ ["Tarabai Shinde published 'Stree Purush Tulana' (A Comparison Between Women and Men) in 1882.","'Stree Purush Tulana' is considered one of India's first modern feminist texts.","Tarabai Shinde was a member of the Satyashodhak Samaj.","The book praised patriarchy and validated traditional upper-caste gender norms."],
+ ["ताराबाई शिंदे ने 1882 में 'स्त्री पुरुष तुलना' शीर्षक से पुस्तक प्रकाशित की।","'स्त्री पुरुष तुलना' को भारत के पहले आधुनिक नारीवादी ग्रंथों में से एक माना जाता है।","ताराबाई शिंदे सत्यशोधक समाज की सदस्य थीं।","इस पुस्तक ने पितृसत्ता की सराहना की और पारंपरिक उच्च-जाति लैंगिक मानदंडों को वैध ठहराया।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because the book sharply attacked patriarchy and the double standards applied to men and women.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि इस पुस्तक में पितृसत्ता और पुरुषों के दोहरे चरित्र पर तीखा हमला किया गया था।",
+ "Stree Purush Tulana (1882) — Tarabai Shinde."),
+
+SQ(RF,"Statements regarding Social Service League and N.M. Joshi:","सोशल सर्विस लीग और एन.एम. जोशी के संबंध में कथन:",
+ ["Social Service League was founded in Bombay in 1911 by N.M. Joshi.","The league aimed to secure for the public better life conditions through social work.","N.M. Joshi also founded the All India Trade Union Congress (AITUC) in 1920.","Social Service League was an armed revolutionary organization."],
+ ["सोशल सर्विस लीग की स्थापना 1911 में बॉम्बे में एन.एम. जोशी द्वारा की गई थी।","लीग का उद्देश्य सामाजिक कार्य के माध्यम से जनता के लिए बेहतर जीवन स्थितियां सुरक्षित करना था।","एन.एम. जोशी ने 1920 में ऑल इंडिया ट्रेड यूनियन कांग्रेस (AITUC) की स्थापना भी की।","सोशल सर्विस लीग एक सशस्त्र क्रांतिकारी संगठन था।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because it was a peaceful social service organisation, not an armed one.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि यह एक शांतिपूर्ण सामाजिक सेवा संगठन था, न कि सशस्त्र संगठन।",
+ "Social Service League (1911) — N.M. Joshi."),
+
+SQ(RF,"Statements regarding Seva Sadan and Behramji M. Malabari:","सेवा सदन और बहरामजी एम. मालाबारी के संबंध में कथन:",
+ ["Seva Sadan was founded in 1908 by Behramji M. Malabari and Dayaram Gidumal.","It specialized in taking care of women who were exploited and discarded by society.","Malabari edited the journal 'Indian Spectator' to promote reform ideas.","Seva Sadan restricted its services exclusively to Parsi women."],
+ ["सेवा सदन की स्थापना 1908 में बहरामजी एम. मालाबारी और दयाराम गिदुमल द्वारा की गई थी।","यह समाज द्वारा शोषित और परित्यक्त महिलाओं की देखभाल के लिए समर्पित था।","मालाबारी ने सुधार विचारों को बढ़ावा देने के लिए 'इंडियन स्पेक्टेटर' पत्रिका का संपादन किया।","सेवा सदन ने अपनी सेवाएं केवल पारसी महिलाओं तक ही सीमित रखीं।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because Seva Sadan was open to women of all castes and religions.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि सेवा सदन सभी जातियों और धर्मों की महिलाओं के लिए खुला था।",
+ "Seva Sadan 1908 — Malabari & Gidumal."),
+
+SQ(RF,"Statements regarding Radhasoami Movement:","राधास्वामी आंदोलन के संबंध में कथन:",
+ ["Radhasoami Satsang was founded in 1861 by Shiv Dayal Saheb (Swami Maharaj) at Agra.","It emphasizes the surrender to a Living Guru and repetition of the Holy Name.","The movement recognizes no distinction of caste or creed for spiritual initiation.","Radhasoami Movement rejected belief in a supreme spiritual entity."],
+ ["राधास्वामी सत्संग की स्थापना 1861 में शिव दयाल साहेब (स्वामी महाराज) द्वारा आगरा में की गई थी।","यह जीवित गुरु के प्रति समर्पण और पवित्र नाम के जाप पर जोर देता है।","यह आंदोलन आध्यात्मिक दीक्षा के लिए जाति या पंथ के किसी भेद को स्वीकार नहीं करता।","राधास्वामी आंदोलन ने एक सर्वोच्च आध्यात्मिक सत्ता में विश्वास को खारिज कर दिया।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because the Radhasoami faith believes in a Supreme God / Soul.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि राधास्वामी पंथ एक सर्वोच्च ईश्वर/आत्मा में विश्वास रखता है।",
+ "Radhasoami Satsang: Agra, 1861."),
+
+MQ(RF,"Match List-I (Social-Religious Reform Organization) with List-II (Founder / Key Person):","सूची-I (सामाजिक-धार्मिक सुधार संगठन) को सूची-II (संस्थापक / प्रमुख व्यक्ति) से सुमेलित करें:",
+ ["A. Brahmo Samaj / ब्रह्म समाज","B. Arya Samaj / आर्य समाज","C. Prarthana Samaj / प्रार्थना समाज","D. Satyashodhak Samaj / सत्यशोधक समाज"],
+ ["1. Atmaram Pandurang / आत्माराम पांडुरंग","2. Raja Ram Mohan Roy / राजा राममोहन राय","3. Swami Dayanand Saraswati / स्वामी दयानंद सरस्वती","4. Jyotirao Phule / ज्योतिराव फुले"],
+ ["A-2,B-3,C-1,D-4","A-1,B-2,C-3,D-4","A-2,B-1,C-4,D-3","A-3,B-4,C-1,D-2"],0,
+ "Brahmo Samaj = Raja Ram Mohan Roy (A-2); Arya Samaj = Swami Dayanand Saraswati (B-3); Prarthana Samaj = Atmaram Pandurang (C-1); Satyashodhak Samaj = Jyotirao Phule (D-4).",
+ "ब्रह्म समाज = राजा राममोहन राय (A-2); आर्य समाज = स्वामी दयानंद सरस्वती (B-3); प्रार्थना समाज = आत्माराम पांडुरंग (C-1); सत्यशोधक समाज = ज्योतिराव फुले (D-4)।",
+ "Prarthana Samaj (1867) — Atmaram Pandurang."),
+
+MQ(RF,"Match List-I (Reform Publication / Newspaper) with List-II (Author / Editor):","सूची-I (सुधार पत्रिका / समाचार पत्र) को सूची-II (लेखक / संपादक) से सुमेलित करें:",
+ ["A. Mirat-ul-Akhbar / मिरात-उल-अखबार","B. Satyarth Prakash / सत्यार्थ प्रकाश","C. Gulamgiri / गुलामगिरी","D. Tahzib-ul-Akhlaq / तहज़ीब-उल-अखलाक़"],
+ ["1. Sir Syed Ahmad Khan / सर सैयद अहमद खान","2. Jyotirao Phule / ज्योतिराव फुले","3. Raja Ram Mohan Roy / राजा राममोहन राय","4. Swami Dayanand Saraswati / स्वामी दयानंद सरस्वती"],
+ ["A-3,B-4,C-2,D-1","A-1,B-2,C-3,D-4","A-3,B-2,C-1,D-4","A-4,B-3,C-2,D-1"],0,
+ "Mirat-ul-Akhbar = Raja Ram Mohan Roy (A-3); Satyarth Prakash = Swami Dayanand (B-4); Gulamgiri = Jyotirao Phule (C-2); Tahzib-ul-Akhlaq = Sir Syed Ahmad Khan (D-1).",
+ "मिरात-उल-अखबार = राजा राममोहन राय (A-3); सत्यार्थ प्रकाश = स्वामी दयानंद (B-4); गुलामगिरी = ज्योतिराव फुले (C-2); तहज़ीब-उल-अखलाक़ = सर सैयद अहमद खान (D-1)।",
+ "Mirat-ul-Akhbar (Persian) — Ram Mohan Roy."),
+
+MQ(RF,"Match List-I (Reform Movement / Event) with List-II (Year of Foundation / Enactment):","सूची-I (सुधार आंदोलन / घटना) को सूची-II (स्थापना / पारित होने का वर्ष) से सुमेलित करें:",
+ ["A. Prohibition of Sati / सती प्रथा का उन्मूलन","B. Hindu Widows' Remarriage Act / हिंदू विधवा पुनर्विवाह अधिनियम","C. Foundation of Arya Samaj / आर्य समाज की स्थापना","D. Foundation of Ramakrishna Mission / रामकृष्ण मिशन की स्थापना"],
+ ["1. 1875","2. 1829","3. 1897","4. 1856"],
+ ["A-2,B-4,C-1,D-3","A-1,B-2,C-3,D-4","A-2,B-1,C-4,D-3","A-4,B-3,C-2,D-1"],0,
+ "Sati abolition = 1829 (A-2); Hindu Widows' Remarriage Act = 1856 (B-4); Arya Samaj = 1875 (C-1); Ramakrishna Mission = 1897 (D-3).",
+ "सती प्रथा उन्मूलन = 1829 (A-2); विधवा पुनर्विवाह अधिनियम = 1856 (B-4); आर्य समाज = 1875 (C-1); रामकृष्ण मिशन = 1897 (D-3)।",
+ "1829 · 1856 · 1875 · 1897 — a classic exam sequence."),
+
+MQ(RF,"Match List-I (Prominent Women Reformer) with List-II (Associated Organization / Work):","सूची-I (प्रमुख महिला सुधारक) को सूची-II (संबंधित संस्था / कार्य) से सुमेलित करें:",
+ ["A. Pandita Ramabai / पंडिता रमाबाई","B. Savitribai Phule / सावित्रीबाई फुले","C. Tarabai Shinde / ताराबाई शिंदे","D. Annie Besant / एनी बेसेंट"],
+ ["1. Stree Purush Tulana / स्त्री पुरुष तुलना","2. Sharada Sadan / शारदा सदन","3. Central Hindu College Banaras / सेंट्रल हिंदू कॉलेज","4. First Girls' School at Pune (1848) / प्रथम बालिका विद्यालय"],
+ ["A-2,B-4,C-1,D-3","A-1,B-2,C-3,D-4","A-2,B-1,C-4,D-3","A-3,B-4,C-1,D-2"],0,
+ "Pandita Ramabai = Sharada Sadan (A-2); Savitribai Phule = first girls' school at Pune (B-4); Tarabai Shinde = Stree Purush Tulana (C-1); Annie Besant = Central Hindu College (D-3).",
+ "पंडिता रमाबाई = शारदा सदन (A-2); सावित्रीबाई फुले = प्रथम बालिका विद्यालय (B-4); ताराबाई शिंदे = स्त्री पुरुष तुलना (C-1); एनी बेसेंट = सेंट्रल हिंदू कॉलेज (D-3)।",
+ "Savitribai Phule — India's first woman teacher."),
+
+MQ(RF,"Match List-I (Socio-Religious Movement) with List-II (Primary Region of Activity):","सूची-I (सामाजिक-धार्मिक आंदोलन) को सूची-II (प्रमुख कार्य क्षेत्र) से सुमेलित करें:",
+ ["A. SNDP Movement / एसएनडीपी आंदोलन","B. Self-Respect Movement / स्वाभिमान आंदोलन","C. Singh Sabha Movement / सिंह सभा आंदोलन","D. Paramahansa Mandali / परमहंस मंडली"],
+ ["1. Punjab / पंजाब","2. Kerala / केरल","3. Maharashtra / महाराष्ट्र","4. Tamil Nadu / तमिलनाडु"],
+ ["A-2,B-4,C-1,D-3","A-1,B-2,C-3,D-4","A-2,B-1,C-4,D-3","A-3,B-4,C-1,D-2"],0,
+ "SNDP = Kerala (A-2); Self-Respect = Tamil Nadu (B-4); Singh Sabha = Punjab (C-1); Paramahansa Mandali = Maharashtra (D-3).",
+ "SNDP आंदोलन = केरल (A-2); स्वाभिमान आंदोलन = तमिलनाडु (B-4); सिंह सभा = पंजाब (C-1); परमहंस मंडली = महाराष्ट्र (D-3)।",
+ "SNDP–Kerala · Self-Respect–Tamil Nadu."),
+
+P(RF,"Who among the following is widely hailed as the 'Father of Modern Indian Renaissance'?","निम्नलिखित में से किसे व्यापक रूप से 'आधुनिक भारतीय पुनर्जागरण का पिता' कहा जाता है?",["Swami Vivekananda / स्वामी विवेकानंद","Raja Ram Mohan Roy / राजा राममोहन राय","Ishwar Chandra Vidyasagar / ईश्वर चंद्र विद्यासागर","Swami Dayanand Saraswati / स्वामी दयानंद सरस्वती"],1,
+ "Raja Ram Mohan Roy is known as the 'Father of Modern India' and 'Maker of Modern India' for laying the foundation of modern scientific thought and social reform.",
+ "राजा राममोहन राय को भारतीय समाज में आधुनिक वैज्ञानिक विचारों और सामाजिक सुधारों की नींव रखने के लिए 'आधुनिक भारत के पिता' और 'पुनर्जागरण के जनक' के रूप में जाना जाता है।",
+ "Ram Mohan Roy = Father of Indian Renaissance."),
+
+P(RF,"In which year was the Native Marriage Act (Civil Marriage Act) fixing the minimum age for marriage passed in British India?","ब्रिटिश भारत में विवाह की न्यूनतम आयु तय करने वाला नेटिव मैरिज एक्ट (सिविल मैरिज एक्ट) किस वर्ष पारित किया गया था?",["1860","1872","1891","1929"],1,
+ "The Native Marriage Act was passed in 1872, fixing the minimum marriage age at 14 years for girls and 18 years for boys.",
+ "1872 में नेटिव मैरिज एक्ट पारित किया गया था, जिसमें लड़कियों के लिए विवाह की न्यूनतम आयु 14 वर्ष और लड़कों के लिए 18 वर्ष तय की गई थी।",
+ "Native Marriage Act 1872 — Keshab Chandra Sen's efforts."),
+
+P(RF,"Who founded the 'Deccan Education Society' in Pune in 1884 along with M.G. Ranade and G.G. Agarkar?","1884 में पुणे में एम.जी. रानाडे और जी.जी. आगरकर के साथ मिलकर 'डेक्कन एजुकेशन सोसाइटी' की स्थापना किसने की थी?",["Bal Gangadhar Tilak / बाल गंगाधर तिलक","Jyotirao Phule / ज्योतिराव फुले","Gopal Krishna Gokhale / गोपाल कृष्ण गोखले","Dadabhai Naoroji / दादाभाई नौरोजी"],0,
+ "The Deccan Education Society was founded in 1884 at Pune by Bal Gangadhar Tilak, V.S. Apte, M.G. Ranade and G.G. Agarkar.",
+ "डेक्कन एजुकेशन सोसाइटी की स्थापना बाल गंगाधर तिलक, वी.एस. आप्टे, एम.जी. रानाडे और जी.जी. आगरकर द्वारा 1884 में पुणे में की गई थी।",
+ "DES 1884 → Fergusson College."),
+
+P(RF,"Which Mughal Emperor conferred the title of 'Raja' upon Ram Mohan Roy before sending him as an envoy to England?","लंदन भेजने से पहले किस मुगल सम्राट ने राममोहन राय को 'राजा' की उपाधि प्रदान की थी?",["Akbar II / अकबर द्वितीय","Bahadur Shah Zafar / बहादुर शाह जफर","Shah Alam II / शाह आलम द्वितीय","Muhammad Shah / मोहम्मद शाह"],0,
+ "Mughal Emperor Akbar II gave Ram Mohan Roy the title 'Raja' and sent him to England to plead the case for increasing his pension before the British Crown.",
+ "मुगल सम्राट अकबर द्वितीय (Akbar II) ने अपनी पेंशन बढ़ाने का मामला ब्रिटिश क्राउन के समक्ष रखने के लिए राममोहन राय को 'राजा' की उपाधि देकर इंग्लैंड भेजा था।",
+ "Roy went to England in 1830, died at Bristol in 1833."),
+
+P(RF,"'Tattvabodhini Patrika', a journal dedicated to religious inquiry and social reform, was published in which language?","धार्मिक जिज्ञासा और सामाजिक सुधार को समर्पित 'तत्वबोधिनी पत्रिका' किस भाषा में प्रकाशित होती थी?",["Bengali / बंगाली","Hindi / हिंदी","English / अंग्रेजी","Sanskrit / संस्कृत"],0,
+ "Tattvabodhini Patrika was started in 1843 in Bengali by Debendranath Tagore's Tattvabodhini Sabha (Akshay Kumar Datta was its first editor).",
+ "तत्वबोधिनी पत्रिका की शुरुआत 1843 में बंगाली भाषा में देवेंद्रनाथ टैगोर की तत्वबोधिनी सभा द्वारा की गई थी (अक्षय कुमार दत्त इसके प्रथम संपादक थे)।",
+ "Editor: Akshay Kumar Datta."),
+
+P(RF,"Who was the founder of the 'National Social Conference' established in 1887 as the social reform cell of INC?","1887 में कांग्रेस के सामाजिक सुधार प्रकोष्ठ के रूप में स्थापित 'नेशनल सोशल कॉन्फ्रेंस' के संस्थापक कौन थे?",["M.G. Ranade and R. Raghunath Rao / एम.जी. रानाडे और आर. रघुनाथ राव","Swami Vivekananda / स्वामी विवेकानंद","B.G. Tilak / बी.जी. तिलक","Annie Besant / एनी बेसेंट"],0,
+ "M.G. Ranade and R. Raghunath Rao founded the National Social Conference in 1887, which met every year along with the Congress session.",
+ "एम.जी. रानाडे और आर. रघुनाथ राव ने 1887 में 'नेशनल सोशल कॉन्फ्रेंस' की स्थापना की, जो हर साल कांग्रेस के अधिवेशन के साथ ही अपना सम्मेलन आयोजित करती थी।",
+ "National Social Conference: 1887."),
+
+P(RF,"In which year was the Bethune School, the first permanent school for girls' education in Calcutta, established?","कलकत्ता में महिला शिक्षा के लिए पहला स्थायी स्कूल 'वेथून स्कूल' किस वर्ष स्थापित किया गया था?",["1849","1856","1872","1882"],0,
+ "J.E.D. Bethune established the 'Hindu Female School' (later Bethune School) in Calcutta in 1849, with Ishwar Chandra Vidyasagar as its secretary.",
+ "जे.ई.डी. वेथून (J.E.D. Bethune) द्वारा 1849 में कलकत्ता में 'हिंदू महिला विद्यालय' (बाद में वेथून स्कूल) की स्थापना की गई थी, जिसमें ईश्वर चंद्र विद्यासागर ने सचिव के रूप में कार्य किया।",
+ "Bethune School 1849 — Vidyasagar secretary."),
+
+P(RF,"Which reformer popularised the slogan 'No Caste, No Religion, No God for Man' (a reworking of Sree Narayana Guru's slogan)?","श्री नारायण गुरु के नारे को बदलते हुए 'मानव के लिए कोई जाति नहीं, कोई धर्म नहीं, कोई ईश्वर नहीं' का नारा किसने दिया?",["Sahodaran Ayyappan / सहोदरन अय्यप्पन","Sree Narayana Guru / श्री नारायण गुरु","E.V. Ramaswamy Naicker / ई.वी. रामास्वामी नायकर","Jyotirao Phule / ज्योतिराव फुले"],0,
+ "Sahodaran Ayyappan, a disciple of Sree Narayana Guru, changed his guru's slogan 'One Caste, One Religion, One God for Man' into 'No Caste, No Religion, No God for Man'.",
+ "श्री नारायण गुरु के शिष्य सहोदरन अय्यप्पन ने अपने गुरु के नारे 'एक जाति, एक धर्म, एक ईश्वर' को बदलते हुए 'कोई जाति नहीं, कोई धर्म नहीं, कोई ईश्वर नहीं' का नारा दिया था।",
+ "Guru: One Caste, One Religion, One God → Ayyappan: No Caste, No Religion, No God."),
+
+P(RF,"Who among the following established the 'Mukti Mission' at Kedgaon near Pune for young widows and destitute women?","निम्नलिखित में से किसने पुणे के पास केडगांव में युवा विधवाओं और बेसहारा महिलाओं के लिए 'मुक्ति मिशन' की स्थापना की?",["Pandita Ramabai / पंडिता रमाबाई","Savitribai Phule / सावित्रीबाई फुले","Anandi Gopal Joshi / आनंदी गोपाल जोशी","Sarojini Naidu / सरोजिनी नायडू"],0,
+ "Pandita Ramabai set up the Mukti Mission at Kedgaon near Pune in 1889 as a home and vocational training centre for destitute women, widows and the visually impaired.",
+ "पंडिता रमाबाई ने 1889 में पुणे के पास केडगांव में बेसहारा महिलाओं, विधवाओं और दृष्टिहीन लोगों के आवास व कौशल प्रशिक्षण के लिए 'मुक्ति मिशन' स्थापित किया था।",
+ "Mukti Mission (Kedgaon) — Pandita Ramabai."),
+
+P(RF,"Which Governor-General passed the Female Infanticide Prevention Act in 1870?","किस गवर्नर-जनरल के कार्यकाल में 1870 का बालिका शिशुहत्या निवारण अधिनियम पारित किया गया था?",["Lord Mayo / लॉर्ड मेयो","Lord Northbrook / लॉर्ड नॉर्थब्रुक","Lord Ripon / लॉर्ड रिपन","Lord Lytton / लॉर्ड लिटन"],0,
+ "The Female Infanticide Prevention Act was passed in 1870 during the tenure of Lord Mayo, making registration of births compulsory.",
+ "लॉर्ड मेयो (Lord Mayo) के कार्यकाल के दौरान 1870 में बालिका शिशुहत्या निवारण अधिनियम पारित हुआ था, जिसने जन्म का पंजीकरण अनिवार्य कर दिया था।",
+ "Female Infanticide Act: 1870 (Lord Mayo)."),
+
+P(RF,"What was the original name of Swami Dayanand Saraswati before he took sannyasa?","संन्यास लेने से पहले स्वामी दयानंद सरस्वती का मूल नाम क्या था?",["Mool Shankar / मूल शंकर","Narendranath Datta / नरेंद्रनाथ दत्त","Gadadhar Chattopadhyay / गदाधर चट्टोपाध्याय","Vardhamana / वर्धमान"],0,
+ "Swami Dayanand Saraswati's childhood name was Mool Shankar Tiwari. He was born in 1824 at Tankara (Gujarat).",
+ "स्वामी दयानंद सरस्वती का बचपन का नाम मूल शंकर तिवारी था। उनका जन्म 1824 में टंकारा (गुजरात) में हुआ था।",
+ "Narendranath Datta = Vivekananda · Gadadhar = Ramakrishna."),
+
+P(RF,"Who was the founder of the 'Dharma Sabha' in 1830 established specifically to counter the liberal reforms of Brahmo Samaj?","1830 में ब्रह्म समाज के उदारवादी सुधारों का मुकाबला करने के लिए स्थापित 'धर्म सभा' के संस्थापक कौन थे?",["Radhakant Deb / राधाकांत देव","Debendranath Tagore / देवेंद्रनाथ टैगोर","Keshab Chandra Sen / केशव चंद्र सेन","Kashi Prasad Ghosh / काशी प्रसाद घोष"],0,
+ "Raja Radhakant Deb formed the 'Dharma Sabha' in 1830, a conservative body that opposed the ideas of Brahmo Samaj and the abolition of Sati.",
+ "राजा राधाकांत देव ने 1830 में 'धर्म सभा' का गठन किया जो एक रूढ़िवादी संस्था थी और इसने ब्रह्म समाज के विचारों तथा सती प्रथा उन्मूलन का विरोध किया था।",
+ "Dharma Sabha (1830) — Radhakant Deb."),
+
+P(RF,"Which Marathi reformer started the weekly newspaper 'Sudharak' along with Gopal Ganesh Agarkar?","किस मराठी सुधारक ने गोपाल गणेश आगरकर के साथ मिलकर 'सुधारक' नामक साप्ताहिक समाचार पत्र शुरू किया था?",["Gopal Krishna Gokhale / गोपाल कृष्ण गोखले","Bal Gangadhar Tilak / बाल गंगाधर तिलक","Jyotirao Phule / ज्योतिराव फुले","M.G. Ranade / एम.जी. रानाडे"],0,
+ "After parting ways with Kesari and Maratha, G.G. Agarkar and Gopal Krishna Gokhale started the paper 'Sudharak' in 1888 to propagate social reforms.",
+ "केसरी और मराठा से अलग होने के बाद जी.जी. आगरकर और गोपाल कृष्ण गोखले ने 1888 में सामाजिक सुधारों का प्रचार करने के लिए 'सुधारक' पत्र शुरू किया।",
+ "Sudharak (1888): Agarkar + Gokhale."),
+
+P(RF,"In which year was the 'Servants of the People Society' (Lok Sevak Mandal) founded by Lala Lajpat Rai at Lahore?","लाला लाजपत राय द्वारा लाहौर में 'सर्वेंट्स ऑफ द पीपल सोसाइटी' (लोक सेवक मंडल) की स्थापना किस वर्ष की गई थी?",["1921","1905","1915","1928"],0,
+ "Lala Lajpat Rai founded the Servants of the People Society at Lahore in 1921; it was inaugurated by Mahatma Gandhi.",
+ "लाला लाजपत राय ने 1921 में लाहौर में 'सर्वेंट्स ऑफ द पीपल सोसाइटी' की स्थापना की थी, जिसका उद्घाटन महात्मा गांधी ने किया था।",
+ "Don't confuse: Servants of India (1905, Gokhale) vs Servants of the People (1921, Lajpat Rai)."),
+
+P(RF,"Who among the following founded the 'Nirankari Movement' within Sikhism in the mid-19th century?","19वीं शताब्दी के मध्य में सिख धर्म के भीतर 'निरंकारी आंदोलन' की स्थापना निम्नलिखित में से किसने की थी?",["Baba Dyal Das / बाबा दयाल दास","Baba Ram Singh / बाबा राम सिंह","Bhagat Jawahar Mal / भगत जवाहर मल","Sundar Singh Majithia / सुंदर सिंह मजीठिया"],0,
+ "Baba Dyal Das founded the Nirankari Movement in 1851, rejecting idol worship and external rituals and stressing worship of the formless God ('Nirankar').",
+ "बाबा दयाल दास ने 1851 में निरंकारी आंदोलन की स्थापना की। उन्होंने सिख धर्म में मूर्तिपूजा और अन्य बाहरी आडंबरों को त्यागकर केवल 'निरंकार' (निराकार ईश्वर) की पूजा पर जोर दिया।",
+ "Baba Ram Singh = Namdhari (Kuka) movement."),
+
+SQ(EV,"Statements regarding Lamarckism (Theory of Inheritance of Acquired Characters):","लैमार्कवाद (उपार्जित लक्षणों की वंशागति के सिद्धांत) के संबंध में कथन:",
+ ["Jean-Baptiste Lamarck proposed that evolution of life forms occurred by use and disuse of organs.","Long neck of Giraffe is a classic example used by Lamarck to explain his theory.","August Weismann supported Lamarckism through his tail-cutting experiments on mice.","Lamarck published his evolutionary ideas in his famous book 'Philosophie Zoologique' (1809)."],
+ ["जीन-बैप्टिस्ट लैमार्क ने प्रस्तावित किया कि जीवों का विकास अंगों के उपयोग और अनुप्रयोग द्वारा हुआ।","जिराफ की लंबी गर्दन लैमार्क द्वारा अपने सिद्धांत को समझाने के लिए दिया गया एक क्लासिक उदाहरण है।","अगस्त वीज़मैन ने चूहों की पूंछ काटने के प्रयोगों द्वारा लैमार्कवाद का समर्थन किया।","लैमार्क ने अपने विकासात्मक विचारों को अपनी प्रसिद्ध पुस्तक 'फिलॉसफी जुलोजिक' (1809) में प्रकाशित किया।"],
+ ["1,2,4","1,3","2,3","1,2,3,4"],0,
+ "Statements 1, 2 and 4 are correct. Statement 3 is wrong because August Weismann disproved Lamarckism by cutting mouse tails for 22 generations and proposed the germplasm theory (continuity of germplasm).",
+ "कथन 1, 2 और 4 सही हैं। कथन 3 गलत है क्योंकि अगस्त वीज़मैन ने चूहों की 22 पीढ़ियों तक पूंछ काटकर लैमार्कवाद को अस्वीकृत (disproved) किया था और 'जननद्रव्य की निरंतरता का सिद्धांत' दिया था।",
+ "Weismann = germplasm theory (disproved Lamarck)."),
+
+SQ(EV,"Statements regarding Darwin's Theory of Natural Selection:","डार्विन के प्राकृतिक चयन के सिद्धांत के संबंध में कथन:",
+ ["Charles Darwin sailed aboard HMS Beagle to study flora and fauna across the world.","Darwin's finches of Galapagos Islands illustrate the concept of Adaptive Radiation.","Thomas Malthus' essay on Population influenced Darwin's concept of 'Struggle for Existence'.","Darwin completely explained the genetic and molecular basis of mutations in his 1859 book."],
+ ["चार्ल्स डार्विन ने दुनिया भर में वनस्पति और जीवों का अध्ययन करने के लिए एचएमएस बीगल पर यात्रा की थी।","गैलापागोस द्वीपों की डार्विन फिंच अनुकूलात्मक विकिरण (Adaptive Radiation) की अवधारणा को दर्शाती हैं।","जनसंख्या पर थॉमस माल्थस के निबंध ने डार्विन के 'अस्तित्व के लिए संघर्ष' की अवधारणा को प्रभावित किया।","डार्विन ने अपनी 1859 की पुस्तक में उत्परिवर्तन के आनुवंशिक और आणविक आधार की पूरी व्याख्या की थी।"],
+ ["1,2,3","2,4","1,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because Darwin was unaware of mutations and the laws of inheritance; this gap was filled later by Neo-Darwinism.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि डार्विन को उत्परिवर्तन (Mutations) और आनुवंशिकी के नियमों की जानकारी नहीं थी; यह कमी बाद में नव-डार्विनवाद (Neo-Darwinism) द्वारा पूरी की गई।",
+ "Darwin: HMS Beagle · Malthus influenced 'struggle for existence'."),
+
+SQ(EV,"Statements regarding Homologous and Analogous Organs:","समजात (Homologous) और समरूप (Analogous) अंगों के संबंध में कथन:",
+ ["Homologous organs have similar basic structure and origin but perform different functions.","Forelimbs of Human, Cheetah, Whale, and Bat are classic examples of Homologous organs.","Homology indicates Divergent Evolution and common ancestry among organisms.","Wings of Butterfly and Wings of Birds are Homologous organs."],
+ ["समजात अंगों की मूलभूत संरचना और उत्पत्ति समान होती है परंतु वे भिन्न कार्य करते हैं।","मानव, चीता, ह्वेल और चमगादड़ के अग्रपाद समजात अंगों के क्लासिक उदाहरण हैं।","समजातता अपसारी विकास (Divergent Evolution) और जीवों के बीच साझा पूर्वजता को दर्शाती है।","तितली के पंख और पक्षियों के पंख समजात अंग हैं।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because wings of butterfly and birds are Analogous organs, resulting from Convergent Evolution.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि तितली और पक्षी के पंख समरूप अंग (Analogous organs) हैं जो अभिसारी विकास (Convergent Evolution) को दर्शाते हैं।",
+ "Homologous → divergent · Analogous → convergent."),
+
+SQ(EV,"Statements regarding Mutation Theory of Evolution:","विकास के उत्परिवर्तन सिद्धांत (Mutation Theory) के संबंध में कथन:",
+ ["Hugo de Vries proposed the Mutation Theory based on his work on Evening Primrose (Oenothera lamarckiana).","Mutations are directional, small, and slow continuous variations according to Hugo de Vries.","De Vries coined the term 'Saltation' for single-step large mutations.","Mutations are random and directionless variations that provide raw material for evolution."],
+ ["ह्यूगो डी ब्रीज ने इवनिंग प्रिमरोज पर अपने कार्य के आधार पर उत्परिवर्तन सिद्धांत प्रस्तावित किया।","ह्यूगो डी ब्रीज के अनुसार उत्परिवर्तन दिशात्मक, छोटे और धीमे निरंतर परिवर्तन हैं।","डी ब्रीज ने एकल-चरण बड़े उत्परिवर्तन के लिए 'साल्टेशन' (Saltation) शब्द गढ़ा।","उत्परिवर्तन यादृच्छिक और दिशाहीन परिवर्तन हैं जो विकास के लिए कच्चा माल प्रदान करते हैं।"],
+ ["1,3,4","1,2","2,4","1,2,3,4"],0,
+ "Statements 1, 3 and 4 are correct. Statement 2 is wrong because according to de Vries mutations are random, sudden and directionless (unlike Darwinian small continuous variations).",
+ "कथन 1, 3 और 4 सही हैं। कथन 2 गलत है क्योंकि डार्विनीय भिन्नताएं सूक्ष्म व दिशात्मक होती हैं, जबकि डी ब्रीज के उत्परिवर्तन यादृच्छिक, दिशाहीन (directionless) और अचानक होते हैं।",
+ "de Vries: Mutation theory + Saltation (Oenothera)."),
+
+SQ(EV,"Statements regarding Evidence of Evolution from Embryology and Vestigial Organs:","भ्रूणविज्ञान और अवशेषी अंगों से प्राप्त विकास के प्रमाणों के संबंध में कथन:",
+ ["Ernst Haeckel proposed the Biogenetic Law summarised as 'Ontogeny recapitulates Phylogeny'.","Karl Ernst von Baer disapproved Ernst Haeckel's biogenetic generalization.","Vermiform appendix, nictitating membrane, and wisdom teeth are human vestigial organs.","Vestigial organs are fully functional organs essential for everyday survival in modern humans."],
+ ["अर्न्स्ट हेकेल ने जैव-आनुवंशिक नियम दिया जिसे 'व्यक्तिवृत्त जातिवृत्त की पुनरावृत्ति करता है' के रूप में संक्षिप्त किया गया है।","कार्ल अर्न्स्ट वॉन बेयर ने अर्न्स्ट हेकेल के जैव-आनुवंशिक नियम को खारिज कर दिया था।","कृमिरूप परिशेषिका (Appendix), निमेषक पटल और अक्ल दाढ़ मानव अवशेषी अंग हैं।","अवशेषी अंग आधुनिक मनुष्यों में दैनिक अस्तित्व के लिए आवश्यक पूर्णतः कार्यात्मक अंग हैं।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because vestigial organs are reduced, non-functional remnants of organs that were functional in ancestors.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि अवशेषी अंग (Vestigial organs) कार्यहीन या गैर-कार्यात्मक अवशेष होते हैं जो पूर्वजों में कार्यात्मक थे।",
+ "Haeckel: Ontogeny recapitulates phylogeny."),
+
+SQ(EV,"Statements regarding Human Evolution Lineage:","मानव विकास वंशानुक्रम (Human Evolution Lineage) के संबंध में कथन:",
+ ["Dryopithecus and Ramapithecus existed about 15 million years ago and were ape-like and man-like respectively.","Australopithecus lived in East African grasslands and hunted with stone weapons.","Homo habilis was the first human-like hominid with brain capacity between 650-800 cc.","Homo erectus had a brain capacity of 1400 cc and did not eat meat at all."],
+ ["ड्रायोपिथेकस और रामापिथेकस लगभग 15 मिलियन वर्ष पूर्व अस्तित्व में थे।","ऑस्ट्रैलोपिथेकस पूर्वी अफ्रीकी घास के मैदानों में रहते थे और पत्थर के हथियारों से शिकार करते थे।","होमो हैबिलिस 650-800 cc मस्तिष्क क्षमता वाला पहला मानव-समान होमिनेड था।","होमो इरेक्टस की मस्तिष्क क्षमता 1400 cc थी और वह मांस बिल्कुल नहीं खाता था।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because Homo erectus had a brain capacity of about 900 cc and probably ate meat (Neanderthal man had about 1400 cc).",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि Homo erectus की मस्तिष्क क्षमता ~900 cc थी और साक्ष्यों के अनुसार वह मांस खाता था (Neanderthal man की क्षमता ~1400 cc थी)।",
+ "H. habilis 650-800cc · H. erectus ~900cc · Neanderthal ~1400cc."),
+
+SQ(EV,"Statements regarding Geological Time Scale and Fossils:","भूगर्भीय समय मापक्रम और जीवाश्मों के संबंध में कथन:",
+ ["Fossils are preserved remains or impressions of hard parts of life-forms found in rocks.","Mesozoic Era is known as the 'Age of Reptiles' (Dinosaurs).","Cenozoic Era is known as the 'Age of Mammals and Angiosperms'.","Radioactive carbon (C-14) dating is used to determine the age of ancient basaltic mountain rocks."],
+ ["जीवाश्म चट्टानों में पाए जाने वाले जीवों के कठोर भागों के संरक्षित अवशेष या छाप हैं।","मेसोजोइक युग को 'सरीसृपों का युग' (डायनासोर) कहा जाता है।","सेनोजोइक युग को 'स्तनधारियों और आवृतबीजियों का युग' कहा जाता है।","प्राचीन बेसाल्टिक पर्वतीय चट्टानों की आयु निर्धारित करने के लिए रेडियोधर्मी कार्बन (C-14) डेटिंग का उपयोग किया जाता है।"],
+ ["1,2,3","1,4","2,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because C-14 dating is used for organic remains (less than about 50,000 years); old inorganic rocks are dated using Uranium-Lead or Potassium-Argon dating.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि C-14 डेटिंग केवल जैविक अवशेषों (कम आयु वाले) के लिए उपयोगी है; प्राचीन अकार्बनिक चट्टानों की आयु के लिए यूरेनियम-लेड डेटिंग या पोटेशियम-ऑर्गन डेटिंग का उपयोग होता है।",
+ "C-14 → organic, young · U-Pb / K-Ar → old rocks."),
+
+MQ(EV,"Match List-I (Evolutionary Scientist) with List-II (Key Theory / Contribution):","सूची-I (विकासवादी वैज्ञानिक) को सूची-II (प्रमुख सिद्धांत / योगदान) से सुमेलित करें:",
+ ["A. Jean-Baptiste Lamarck / लैमार्क","B. Charles Darwin / डार्विन","C. Hugo de Vries / ह्यूगो डी ब्रीज","D. Oparin and Haldane / ओपेरिन और हाल्डेन"],
+ ["1. Theory of Mutation / उत्परिवर्तन सिद्धांत","2. Chemical Origin of Life / जीवन की रासायनिक उत्पत्ति","3. Natural Selection / प्राकृतिक चयन","4. Inheritance of Acquired Characters / उपार्जित लक्षणों की वंशागति"],
+ ["A-4,B-3,C-1,D-2","A-1,B-2,C-3,D-4","A-4,B-2,C-1,D-3","A-3,B-4,C-2,D-1"],0,
+ "Lamarck = Inheritance of acquired characters (A-4); Darwin = Natural Selection (B-3); de Vries = Mutation theory (C-1); Oparin & Haldane = Chemical origin of life (D-2).",
+ "लैमार्क = उपार्जित लक्षणों की वंशागति (A-4); डार्विन = प्राकृतिक चयन (B-3); डी ब्रीज = उत्परिवर्तन सिद्धांत (C-1); ओपेरिन व हाल्डेन = जीवन की रासायनिक उत्पत्ति (D-2)।",
+ "Oparin–Haldane: chemical evolution of life."),
+
+MQ(EV,"Match List-I (Evolutionary Pattern / Phenomenon) with List-II (Classic Example):","सूची-I (विकासवादी पैटर्न / परिघटना) को सूची-II (क्लासिक उदाहरण) से सुमेलित करें:",
+ ["A. Adaptive Radiation / अनुकूलात्मक विकिरण","B. Divergent Evolution / अपसारी विकास","C. Convergent Evolution / अभिसारी विकास","D. Directional Selection / दिशात्मक चयन"],
+ ["1. Wings of Butterfly and Birds / तितली और पक्षी के पंख","2. Darwin's Finches / डार्विन की फिंच","3. Industrial Melanism in Moths / मोथ में औद्योगिक मेलैनिज्म","4. Forelimbs of Human, Cheetah, Whale / मानव, चीता, ह्वेल के अग्रपाद"],
+ ["A-2,B-4,C-1,D-3","A-1,B-2,C-3,D-4","A-2,B-1,C-4,D-3","A-4,B-3,C-2,D-1"],0,
+ "Adaptive Radiation = Darwin's Finches (A-2); Divergent Evolution = mammalian forelimbs (B-4); Convergent Evolution = wings of butterfly & birds (C-1); Directional Selection = Industrial Melanism (D-3).",
+ "अनुकूलात्मक विकिरण = डार्विन फिंच (A-2); अपसारी विकास = स्तनधारियों के अग्रपाद (B-4); अभिसारी विकास = तितली व पक्षी के पंख (C-1); दिशात्मक चयन = औद्योगिक मेलैनिज्म (D-3)।",
+ "Industrial melanism = directional selection (peppered moth)."),
+
+MQ(EV,"Match List-I (Human Ancestor / Fossil) with List-II (Key Characteristic / Brain Capacity):","सूची-I (मानव पूर्वज / जीवाश्म) को सूची-II (मुख्य विशेषता / मस्तिष्क क्षमता) से सुमेलित करें:",
+ ["A. Homo habilis","B. Homo erectus","C. Neanderthal Man","D. Australopithecus"],
+ ["1. Brain capacity ~1400 cc, used hides & buried dead / 1400 cc, शवों को दफनाना","2. Brain capacity 650-800 cc, first tool maker / 650-800 cc, प्रथम औजार निर्माता","3. Brain capacity ~900 cc, ate meat / 900 cc, मांस भक्षण","4. Lived in East African grasslands, walked erect / पूर्वी अफ्रीकी घास मैदान"],
+ ["A-2,B-3,C-1,D-4","A-1,B-2,C-3,D-4","A-2,B-1,C-4,D-3","A-3,B-4,C-1,D-2"],0,
+ "Homo habilis = 650-800 cc (A-2); Homo erectus = ~900 cc (B-3); Neanderthal Man = ~1400 cc (C-1); Australopithecus = East African grasslands (D-4).",
+ "Homo habilis = 650-800 cc (A-2); Homo erectus = ~900 cc (B-3); Neanderthal Man = ~1400 cc (C-1); Australopithecus = पूर्वी अफ्रीका के घास के मैदान (D-4)।",
+ "habilis 650-800 → erectus 900 → Neanderthal 1400."),
+
+MQ(EV,"Match List-I (Geological Era) with List-II (Dominant Life Forms / Title):","सूची-I (भूगर्भीय युग) को सूची-II (प्रमुख जीव रूप / उपाधि) से सुमेलित करें:",
+ ["A. Mesozoic Era / मेसोजोइक युग","B. Cenozoic Era / सेनोजोइक युग","C. Palaeozoic Era (Carboniferous) / पेलियोजोइक","D. Precambrian Era / प्रीकैम्ब्रियन युग"],
+ ["1. Age of Amphibians / जलथलचरों का युग","2. Age of Reptiles (Dinosaurs) / सरीसृपों का युग","3. Origin of Life / जीवन की उत्पत्ति","4. Age of Mammals / स्तनधारियों का युग"],
+ ["A-2,B-4,C-1,D-3","A-1,B-2,C-3,D-4","A-2,B-1,C-4,D-3","A-4,B-3,C-2,D-1"],0,
+ "Mesozoic = Age of Reptiles (A-2); Cenozoic = Age of Mammals (B-4); Palaeozoic (Carboniferous) = Age of Amphibians (C-1); Precambrian = Origin of Life (D-3).",
+ "मेसोजोइक = सरीसृपों का युग (A-2); सेनोजोइक = स्तनधारियों का युग (B-4); पेलियोजोइक (कार्बोनिफेरस) = उभयचरों का युग (C-1); प्रीकैम्ब्रियन = जीवन की उत्पत्ति (D-3)।",
+ "Palaeozoic: amphibians · Mesozoic: reptiles · Cenozoic: mammals."),
+
+P(EV,"What term was coined by Hugo de Vries to describe single-step large mutations that lead to speciation?","प्रजातीकरण (Speciation) का कारण बनने वाले एकल-चरण बड़े उत्परिवर्तनों को वर्णित करने के लिए ह्यूगो डी ब्रीज द्वारा कौन सा शब्द गढ़ा गया था?",["Saltation / साल्टेशन","Adaptive Radiation / अनुकूलात्मक विकिरण","Genetic Drift / आनुवंशिक बहाव","Polyploidy / बहुगुणिता"],0,
+ "Hugo de Vries coined the term 'Saltation' to mean a single-step large mutation that drives speciation.",
+ "ह्यूगो डी ब्रीज ने बड़ी, अचानक होने वाली और एक ही चरण में प्रजातीकरण करने वाली उत्परिवर्तनीय भिन्नताओं के लिए 'साल्टेशन' (Saltation) शब्द का प्रयोग किया था।",
+ "Saltation = sudden large mutation (de Vries)."),
+
+P(EV,"Who among the following independently proposed a theory of evolution by natural selection similar to Charles Darwin after his work in the Malay Archipelago?","मलय द्वीपसमूह में अपने कार्य के बाद निम्नलिखित में से किसने चार्ल्स डार्विन के समान स्वतंत्र रूप से प्राकृतिक चयन द्वारा विकास का सिद्धांत प्रस्तावित किया था?",["Alfred Russel Wallace / अल्फ्रेड रसेल वॉलेस","Gregor Mendel / ग्रेगर मेंडेल","Thomas Malthus / थॉमस माल्थस","Jean-Baptiste Lamarck / जीन-बैप्टिस्ट लैमार्क"],0,
+ "Alfred Russel Wallace, working in the Malay Archipelago, arrived independently at similar conclusions regarding natural selection.",
+ "अल्फ्रेड रसेल वॉलेस (Alfred Russel Wallace) ने मलय द्वीपसमूह (Malay Archipelago) में काम करते हुए प्राकृतिक चयन का समान सिद्धांत विकसित किया था।",
+ "Wallace — Malay Archipelago (Wallace Line)."),
+
+P(EV,"The famous book 'On the Origin of Species by Means of Natural Selection' was published by Charles Darwin in which year?","चार्ल्स डार्विन द्वारा प्रसिद्ध पुस्तक 'ऑन द ओरिजिन ऑफ स्पीशीज' किस वर्ष प्रकाशित की गई थी?",["1809","1859","1901","1923"],1,
+ "Charles Darwin published his landmark book 'On the Origin of Species' on 24 November 1859.",
+ "चार्ल्स डार्विन ने अपनी युगगामी पुस्तक 'ऑन द ओरिजिन ऑफ स्पीशीज' 24 नवंबर 1859 को प्रकाशित की थी।",
+ "1809: Lamarck's book & Darwin's birth · 1859: Origin of Species."),
+
+P(EV,"What is the phenomenon of change in allele frequencies in a population due to random chance events called?","यादृच्छिक आकस्मिक घटनाओं के कारण किसी समष्टि में एलील आवृत्तियों में परिवर्तन की परिघटना को क्या कहा जाता है?",["Gene Flow / जीन प्रवाह","Genetic Drift / आनुवंशिक बहाव","Natural Selection / प्राकृतिक चयन","Adaptive Radiation / अनुकूलात्मक विकिरण"],1,
+ "Random change in allele frequencies occurring purely by chance in small populations is called Genetic Drift (Sewall Wright effect).",
+ "संयोग या यादृच्छिक घटनाओं के कारण एलील आवृत्तियों में होने वाले आकस्मिक परिवर्तन को आनुवंशिक बहाव (Genetic Drift / सीवॉल राइट प्रभाव) कहते हैं।",
+ "Genetic drift = Sewall Wright effect."),
+
+P(EV,"Which extinct primitive bird fossil having both reptilian and avian characteristics acts as a connecting link between reptiles and birds?","सरीसृप और पक्षी दोनों विशेषताओं वाला कौन सा विलुप्त आदिम पक्षी जीवाश्म उनके बीच एक योजक कड़ी (Connecting link) के रूप में कार्य करता है?",["Archaeopteryx / आर्कियोप्टेरिक्स","Pterodactyl / टेरोडक्टाइल","Icthyostega / इक्थियोस्टेगा","Seymouria / सीमूरिया"],0,
+ "Archaeopteryx, a Jurassic fossil, exhibits both reptilian (teeth, long tail) and avian (feathers, wings) characters, serving as a connecting link.",
+ "आर्कियोप्टेरिक्स (Archaeopteryx) जुरासिक काल का जीवाश्म है जिसमें दांत व पूंछ (सरीसृप लक्षण) तथा पंख (पक्षी लक्षण) दोनों मौजूद थे।",
+ "Archaeopteryx = reptile–bird link."),
+
+P(EV,"Where did the modern human species (Homo sapiens) originate before migrating across the world?","दुनिया भर में पलायन करने से पहले आधुनिक मानव प्रजाति (Homo sapiens) की उत्पत्ति कहाँ हुई थी?",["Central Asia / मध्य एशिया","Africa / अफ्रीका","Europe / यूरोप","South America / दक्षिण अमेरिका"],1,
+ "According to fossil and genetic evidence (mitochondrial DNA), modern humans (Homo sapiens) originated in Africa before spreading globally.",
+ "जीवाश्म और आणविक साक्ष्यों (Mitochondrial DNA) के अनुसार आधुनिक मानव (Homo sapiens) की उत्पत्ति अफ्रीका में हुई थी।",
+ "Out-of-Africa model."),
+
+SQ(MD,"Statements regarding Mendel's Law of Dominance:","मेंडेल के प्रभाविता के नियम (Law of Dominance) के संबंध में कथन:",
+ ["Characters are controlled by discrete units called factors (genes) that occur in pairs.","In a dissimilar pair of factors, one factor dominates (dominant) the other (recessive).","The Law of Dominance is universally applicable without any exceptions.","It explains the expression of only one parental character in F1 generation in a monohybrid cross."],
+ ["लक्षण पृथक इकाइयों द्वारा नियंत्रित होते हैं जिन्हें कारक (जीन) कहा जाता है, जो जोड़ों में होते हैं।","कारकों के असमान जोड़े में, एक कारक (प्रभावी) दूसरे (अप्रभावी) पर हावी होता है।","प्रभाविता का नियम बिना किसी अपवाद के सार्वभौमिक रूप से लागू होता है।","यह एकसंकर संकरण में F1 पीढ़ी में केवल एक पैतृक लक्षण की अभिव्यक्ति की व्याख्या करता है।"],
+ ["1,2,4","1,3","2,3","1,2,3,4"],0,
+ "Statements 1, 2 and 4 are correct. Statement 3 is wrong because Incomplete Dominance and Codominance are established exceptions to the Law of Dominance.",
+ "कथन 1, 2 और 4 सही हैं। कथन 3 गलत है क्योंकि अपूर्ण प्रभाविता (Incomplete Dominance) और सह-प्रभाविता (Codominance) प्रभाविता के नियम के ज्ञात अपवाद (exceptions) हैं।",
+ "Exceptions to dominance: incomplete dominance & codominance."),
+
+SQ(MD,"Statements regarding Mendel's Law of Segregation (Purity of Gametes):","मेंडेल के पृथक्करण के नियम (Law of Segregation) के संबंध में कथन:",
+ ["Alleles do not show any blending and both characters are recovered as such in F2 generation.","Factors or alleles of a pair segregate from each other during gamete formation.","A gamete receives both alleles of a gene pair simultaneously during meiosis.","This law is universal and holds true without exceptions in diploid sexual organisms."],
+ ["एलील कोई सम्मिश्रण (blending) नहीं दिखाते हैं और F2 पीढ़ी में दोनों लक्षण प्राप्त होते हैं।","युग्मक निर्माण के दौरान एक जोड़े के कारक या एलील एक-दूसरे से पृथक हो जाते हैं।","अर्धसूत्रीविभाजन के दौरान एक युग्मक को एक जीन जोड़े के दोनों एलील एक साथ प्राप्त होते हैं।","यह नियम सार्वभौमिक है और द्विगुणित लैंगिक जीवों में बिना किसी अपवाद के सत्य है।"],
+ ["1,2,4","3,4","1,3","1,2,3,4"],0,
+ "Statements 1, 2 and 4 are correct. Statement 3 is wrong because a gamete is pure and receives only one allele of a gene pair.",
+ "कथन 1, 2 और 4 सही हैं। कथन 3 गलत है क्योंकि युग्मक शुद्ध होते हैं और केवल एक ही एलील प्राप्त करते हैं (दोनों एलील एक साथ नहीं आते)।",
+ "Segregation = purity of gametes: one allele per gamete."),
+
+SQ(MD,"Statements regarding Mendel's Law of Independent Assortment:","मेंडेल के स्वतंत्र अपव्यूहन के नियम (Law of Independent Assortment) के संबंध में कथन:",
+ ["It states that when two pairs of traits are combined in a hybrid, segregation of one pair of characters is independent of the other pair.","The phenotypic ratio obtained in F2 generation of a standard dihybrid cross is 9:3:3:1.","The genotypic ratio in F2 generation of a dihybrid cross is 1:2:1:2:4:2:1:2:1.","This law applies universally to all genes regardless of whether they are linked on the same chromosome."],
+ ["यह बताता है कि जब किसी संकर में लक्षणों के दो जोड़े जोड़े जाते हैं, तो एक जोड़े का पृथक्करण दूसरे जोड़े से स्वतंत्र होता है।","एक मानक द्विसंकर संकरण की F2 पीढ़ी में प्राप्त फेनोटाइपिक अनुपात 9:3:3:1 होता है।","द्विसंकर संकरण की F2 पीढ़ी में जीनोटाइपिक अनुपात 1:2:1:2:4:2:1:2:1 होता है।","यह नियम सभी जीनों पर सार्वभौमिक रूप से लागू होता है, चाहे वे एक ही गुणसूत्र पर सहलग्न (linked) हों या नहीं।"],
+ ["1,2,3","2,4","1,4","1,2,3,4"],0,
+ "Statements 1, 2 and 3 are correct. Statement 4 is wrong because Linkage is a major exception to this law; linked genes on the same chromosome do not assort independently.",
+ "कथन 1, 2 और 3 सही हैं। कथन 4 गलत है क्योंकि सहलग्नता (Linkage) इस नियम का एक प्रमुख अपवाद है; एक ही गुणसूत्र पर स्थित सहलग्न जीन स्वतंत्र रूप से अपव्यूहित नहीं होते हैं।",
+ "Dihybrid: 9:3:3:1 (phenotype) · 1:2:1:2:4:2:1:2:1 (genotype)."),
+
+P(MD,"Assertion (A): The Law of Segregation is also known as the Law of Purity of Gametes. Reason (R): Gametes are always haploid and carry only one allele of a gene pair without any contamination or blending.","अभिकथन (A): पृथक्करण के नियम को 'युग्मकों की शुद्धता का नियम' भी कहा जाता है। कारण (R): युग्मक हमेशा अगुणित होते हैं और बिना किसी संदूषण या सम्मिश्रण के जीन जोड़े का केवल एक ही एलील ले जाते हैं।",["Both (A) and (R) are true and (R) is the correct explanation of (A). / (A) और (R) दोनों सत्य हैं और (R), (A) की सही व्याख्या है।","Both (A) and (R) are true, but (R) is NOT the correct explanation of (A). / (A) और (R) दोनों सत्य हैं, लेकिन (R), (A) की सही व्याख्या नहीं है।","(A) is true, but (R) is false. / (A) सत्य है, लेकिन (R) असत्य है।","(A) is false, but (R) is true. / (A) असत्य है, लेकिन (R) सत्य है।"],0,
+ "Both are true. Since in a heterozygous parent both alleles separate during meiosis and each gamete carries only one pure allele, (R) correctly explains why the law is called the Law of Purity of Gametes.",
+ "अभिकथन और कारण दोनों सही हैं। चूंकि विषमयुग्मजी जनक में अर्धसूत्रीविभाजन के समय दोनों एलील अलग हो जाते हैं और प्रत्येक युग्मक में केवल एक एलील शुद्ध अवस्था में रहता है, इसलिए (R), (A) की सही व्याख्या है।",
+ "Segregation → pure gametes (one allele each)."),
+
+P(MD,"Assertion (A): All dihybrid crosses performed by Mendel always yielded a 9:3:3:1 phenotypic ratio in the F2 generation. Reason (R): Genes controlling the traits studied by Mendel were located on different chromosomes or far apart on the same chromosome, exhibiting no linkage.","अभिकथन (A): मेंडेल द्वारा किए गए सभी द्विसंकर संकरणों ने F2 पीढ़ी में हमेशा 9:3:3:1 का फेनोटाइपिक अनुपात दिया। कारण (R): मेंडेल द्वारा अध्ययन किए गए लक्षणों को नियंत्रित करने वाले जीन अलग-अलग गुणसूत्रों पर या एक ही गुणसूत्र पर दूर स्थित थे, जिससे सहलग्नता प्रदर्शित नहीं हुई।",["Both (A) and (R) are true and (R) is the correct explanation of (A). / (A) और (R) दोनों सत्य हैं और (R), (A) की सही व्याख्या है।","Both (A) and (R) are true, but (R) is NOT the correct explanation of (A). / (A) और (R) दोनों सत्य हैं, लेकिन (R), (A) की सही व्याख्या नहीं है।","(A) is true, but (R) is false. / (A) सत्य है, लेकिन (R) असत्य है।","(A) is false, but (R) is true. / (A) असत्य है, लेकिन (R) सत्य है।"],0,
+ "Both (A) and (R) are true and (R) correctly explains (A). Mendel obtained the 9:3:3:1 ratio because the gene pairs he studied resided on separate chromosomes or were far enough apart to assort independently without linkage.",
+ "अभिकथन और कारण दोनों सही हैं और कारण अभिकथन की सही व्याख्या करता है। मेंडेल के 9:3:3:1 अनुपात प्राप्त करने का कारण यह था कि उनके द्वारा चुने गए सात गुण/जीन अलग-अलग गुणसूत्रों पर थे (या उनमें सहलग्नता नहीं थी), जिससे स्वतंत्र अपव्यूहन संभव हुआ।",
+ "No linkage in Mendel's traits → independent assortment."),
+
+MQ(MD,"Match List-I (Mendelian Concept / Ratio) with List-II (Phenomenon / Value):","सूची-I (मेंडेलियन अवधारणा / अनुपात) को सूची-II (परिघटना / मान) से सुमेलित करें:",
+ ["A. Monohybrid F2 Phenotypic Ratio / एकसंकर F2 फेनोटाइपिक अनुपात","B. Dihybrid F2 Phenotypic Ratio / द्विसंकर F2 फेनोटाइपिक अनुपात","C. Incomplete Dominance (Antirrhinum) / अपूर्ण प्रभाविता","D. Linkage (Morgan's discovery) / सहलग्नता"],
+ ["1. Exception to Law of Dominance / प्रभाविता के नियम का अपवाद","2. 3 : 1","3. Exception to Law of Independent Assortment / स्वतंत्र अपव्यूहन का अपवाद","4. 9 : 3 : 3 : 1"],
+ ["A-2,B-4,C-1,D-3","A-1,B-2,C-3,D-4","A-4,B-3,C-2,D-1","A-2,B-1,C-4,D-3"],0,
+ "Monohybrid F2 phenotypic ratio is 3:1 (A-2); Dihybrid F2 ratio is 9:3:3:1 (B-4); Incomplete dominance deviates from the Law of Dominance (C-1); Linkage is an exception to Independent Assortment (D-3).",
+ "एकसंकर F2 फेनोटाइपिक अनुपात = 3:1 (A-2); द्विसंकर F2 फेनोटाइपिक अनुपात = 9:3:3:1 (B-4); अपूर्ण प्रभाविता = प्रभाविता के नियम का अपवाद (C-1); सहलग्नता (Linkage) = स्वतंत्र अपव्यूहन के नियम का अपवाद (D-3)।",
+ "Antirrhinum / Mirabilis → incomplete dominance (1:2:1)."),
+
+P(MD,"Which genetic cross ratio demonstrates Mendel's Law of Segregation in the F2 generation at the phenotypic level?","कौन सा आनुवंशिक संकरण अनुपात फेनोटाइपिक स्तर पर F2 पीढ़ी में मेंडेल के पृथक्करण के नियम को प्रदर्शित करता है?",["1:2:1","3:1","9:3:3:1","1:1:1:1"],1,
+ "The 3:1 phenotypic ratio in the F2 generation of a monohybrid cross demonstrates the segregation of dominant and recessive traits.",
+ "एकसंकर संकरण की F2 पीढ़ी में 3:1 फेनोटाइपिक अनुपात (3 प्रभावी : 1 अप्रभावी) पृथक्करण के नियम का प्रत्यक्ष प्रमाण है।",
+ "Monohybrid F2: phenotype 3:1 · genotype 1:2:1."),
+
+P(MD,"What is the genotypic ratio obtained in the F2 generation of a monohybrid cross obeying Mendel's laws?","मेंडेल के नियमों का पालन करने वाले एकसंकर संकरण की F2 पीढ़ी में प्राप्त जीनोटाइपिक अनुपात क्या है?",["3:1","1:2:1","9:3:3:1","2:1:1"],1,
+ "The genotypic ratio in the F2 generation of a monohybrid cross is 1:2:1 (1 TT : 2 Tt : 1 tt).",
+ "एकसंकर संकरण की F2 पीढ़ी का जीनोटाइपिक अनुपात 1:2:1 होता है (1 TT : 2 Tt : 1 tt)।",
+ "Genotype 1:2:1 vs phenotype 3:1."),
+
+P(MD,"Which scientist rediscovered Mendel's Laws of Inheritance independently in 1900 along with Hugo de Vries and Erich von Tschermak?","1900 में ह्यूगो डी ब्रीज और एरिच वॉन त्शेरमाक के साथ किस वैज्ञानिक ने स्वतंत्र रूप से मेंडेल के वंशानुक्रम के नियमों की पुनः खोज की?",["Carl Correns / कार्ल कॉरेन्स","Thomas Hunt Morgan / थॉमस हंट मॉर्गन","William Bateson / विलियम बेटसन","Walter Sutton / वॉल्टर सटन"],0,
+ "In 1900, Carl Correns (Germany), Hugo de Vries (Holland) and Erich von Tschermak (Austria) independently rediscovered Mendel's principles of heredity.",
+ "सन 1900 में तीन वैज्ञानिकों—कार्ल कॉरेन्स (जर्मनी), ह्यूगो डी ब्रीज (हॉलैंड) और एरिच वॉन त्शेरमाक (ऑस्ट्रिया)—ने मेंडेल के नियमों की पुनः खोज की।",
+ "Mendel's laws rediscovered in 1900 by three scientists."),
+
+P(MD,"How many different types of gametes are produced by a heterozygous plant with genotype AaBbCc according to the Law of Independent Assortment?","स्वतंत्र अपव्यूहन के नियम के अनुसार AaBbCc जीनोटाइप वाले एक विषमयुग्मजी पौधे द्वारा कितने विभिन्न प्रकार के युग्मक उत्पादित किए जाते हैं?",["4","6","8","16"],2,
+ "The number of gamete types is given by 2^n, where n is the number of heterozygous gene pairs. Here n = 3, so 2^3 = 8 different types of gametes are formed.",
+ "उत्पादित युग्मकों के प्रकार की संख्या 2^n सूत्र से ज्ञात की जाती है, जहाँ n विषमयुग्मजी जोड़ों की संख्या है। यहाँ n = 3, इसलिए 2^3 = 8 प्रकार के युग्मक बनेंगे।",
+ "Gamete types = 2^n (n = heterozygous pairs)."),
+];
+QUESTIONS.forEach(q=>{const o=q.options.map((x,i)=>({x,c:i===q.correct}));for(let i=o.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[o[i],o[j]]=[o[j],o[i]];}q.options=o.map(e=>e.x);q.correct=o.findIndex(e=>e.c);});
+const TAGLINES=["🔥 BRAIN BLAST!","🧠 CAN YOU CRACK IT?","🎯 EXAM TRAP!","🚨 DON'T FALL FOR THE TRAP!","🏆 BOSS LEVEL!"];
+const MOTIVATE=["ध्यान से सोचिए… इसमें एक ट्रैप है! 👀","जवाब लॉक करने से पहले अच्छी तरह सोच लें! 🔒","जल्दबाजी न करें—हर विकल्प ध्यान से पढ़ें! 🎯","दिमाग लगाइए, यह सवाल आपकी परीक्षा में आ सकता है! 💪","एक गहरी सांस लें और ध्यान से पढ़ें! 🧘"];
+function shuffleTag(arr,i){return arr[i % arr.length];}
+
+const state={idx:0,score:0,correctCount:0,wrongCount:0,answered:false,timer:null,timeLeft:TOTAL_TIME,name:""};
+const app=document.getElementById('app');
+
+function renderStart(){
+  app.innerHTML=`
+    <div class="hero">
+      <div class="tagline">🎮 GAME-SHOW QUIZ CHALLENGE 🎮</div>
+      <h1>ROUTINE-11</h1>
+      <p>Daroga / Police / BPSC / BSSC · Bilingual Game-Show Quiz · ${QUESTIONS.length} Questions</p>
+    </div>
+    <div class="card">
+      <p style="color:var(--dim);font-size:14px;margin-bottom:10px;">Enter your name to begin / शुरू करने के लिए अपना नाम दर्ज करें:</p>
+      <input type="text" id="nameInput" placeholder="Your Name / आपका नाम" />
+      <div class="center"><button class="btn" id="startBtn">🚀 Start Quiz / शुरू करें</button></div>
+    </div>
+    <div class="card" style="font-size:13px;color:var(--dim);line-height:1.6;">
+      📚 Topics: Socio-Religious Reform Movements, Evolution, Mendelian Genetics<br>
+      ⏱️ ${TOTAL_TIME} seconds per question &nbsp;|&nbsp; 🏆 Scoreboard every 10 questions
+    </div>
+  `;
+  document.getElementById('startBtn').onclick=()=>{
+    state.name=document.getElementById('nameInput').value.trim()||"Champion";
+    renderQuestion();
+  };
+}
+
+function renderQuestion(){
+  if(state.idx>=QUESTIONS.length){renderFinal();return;}
+  const q=QUESTIONS[state.idx];
+  state.answered=false;
+  state.timeLeft=TOTAL_TIME;
+  let matchHtml="";
+  if(q.matchTable){
+    matchHtml=`<div class="matchbox">
+      <div class="matchcol"><h4>List-I</h4>${q.matchTable.left.map(x=>`<div class="matchrow">${x}</div>`).join('')}</div>
+      <div class="matchcol"><h4>List-II</h4>${q.matchTable.right.map(x=>`<div class="matchrow">${x}</div>`).join('')}</div>
+    </div>`;
+  }
+  app.innerHTML=`
+    <div class="scorebar"><span>Q ${state.idx+1} / ${QUESTIONS.length}</span><span>Score: <b>${state.score}</b></span></div>
+    <div class="card">
+      <div class="taghead">
+        <span class="tagline">${shuffleTag(TAGLINES,state.idx)}</span>
+        <span class="cat-tag">${q.cat}</span>
+      </div>
+      <div class="timer-wrap"><div class="timer-ring" id="ring" style="--pct:100"><div class="timer-inner" id="timerNum">${TOTAL_TIME}</div></div></div>
+      <p class="motivate">${shuffleTag(MOTIVATE,state.idx)}</p>
+      <div class="qtext">${q.en}<br><br><b>प्र.</b> ${q.hi}</div>
+      ${matchHtml}
+      <div class="options" id="optionsWrap">
+        ${q.options.map((o,i)=>`<button class="opt" data-i="${i}">${String.fromCharCode(65+i)}. ${o.en} / ${o.hi}</button>`).join('')}
+      </div>
+      <div id="resultBox"></div>
+      <div class="next-row" id="nextRow" style="display:none;"><button class="btn" id="nextBtn">Next Question ➡️</button></div>
+    </div>
+  `;
+  document.querySelectorAll('.opt').forEach(btn=>{
+    btn.onclick=()=>selectAnswer(parseInt(btn.dataset.i));
+  });
+  startTimer();
+}
+
+function startTimer(){
+  clearInterval(state.timer);
+  const ring=document.getElementById('ring');
+  const numEl=document.getElementById('timerNum');
+  state.timer=setInterval(()=>{
+    state.timeLeft--;
+    const pct=Math.max(0,(state.timeLeft/TOTAL_TIME)*100);
+    if(ring){ring.style.setProperty('--pct',pct);}
+    if(numEl){numEl.textContent=Math.max(0,state.timeLeft);}
+    if(ring && pct<20){ring.classList.add('warn');}
+    if(state.timeLeft<=0 && !state.answered){
+      selectAnswer(-1);
+    }
+  },1000);
+}
+
+function selectAnswer(choice){
+  if(state.answered)return;
+  state.answered=true;
+  clearInterval(state.timer);
+  const q=QUESTIONS[state.idx];
+  const opts=document.querySelectorAll('.opt');
+  opts.forEach(b=>b.setAttribute('disabled','true'));
+  const isCorrect=choice===q.correct;
+  if(isCorrect){
+    state.score+=10;
+    state.correctCount++;
+    opts[choice].classList.add('correct');
+  }else{
+    state.wrongCount++;
+    if(choice>=0)opts[choice].classList.add('wrong');
+    opts[q.correct].classList.add('correct');
+  }
+  const resultBox=document.getElementById('resultBox');
+  const tipHtml=q.tip?`<p>💡 <b>Exam Tip:</b> ${q.tip}</p>`:"";
+  if(isCorrect){
+    resultBox.innerHTML=`<div class="result ok"><h3>🎉 CORRECT! 🔥</h3><p>🏆 Correct Answer: ${String.fromCharCode(65+q.correct)} — ${q.options[q.correct].en} / ${q.options[q.correct].hi}</p><p>📚 Why? ${q.exp_en}</p><p>${q.exp_hi}</p>${tipHtml}</div>`;
+  }else{
+    const timeUp=choice===-1;
+    const yours=timeUp?"":`<p>❎ Your Answer: ${String.fromCharCode(65+choice)} — ${q.options[choice].en} / ${q.options[choice].hi} — this is not correct.</p>`;
+    resultBox.innerHTML=`<div class="result bad"><h3>${timeUp?"⏰ TIME'S UP!":"❌ NOT QUITE!"}</h3>
+      <p>🏆 Correct Answer: ${String.fromCharCode(65+q.correct)} — ${q.options[q.correct].en} / ${q.options[q.correct].hi}</p>${yours}
+      <p>📚 Why? ${q.exp_en}</p>
+      <p>${q.exp_hi}</p>${tipHtml}</div>`;
+  }
+  document.getElementById('nextRow').style.display='block';
+  document.getElementById('nextBtn').onclick=()=>{
+    state.idx++;
+    if(state.idx%10===0 && state.idx>0){
+      showScoreboard(state.idx>=QUESTIONS.length);
+    }else{
+      renderQuestion();
+    }
+  };
+}
+
+function showScoreboard(isLast){
+  const total=state.correctCount+state.wrongCount;
+  const acc=total>0?Math.round((state.correctCount/total)*100):0;
+  let comment;
+  if(acc>=85)comment="🔥 You're on fire! Keep the momentum going!";
+  else if(acc>=60)comment="⚡ Solid performance! A little more focus and you'll ace it!";
+  else if(acc>=40)comment="💪 The traps are getting you—time to fight back!";
+  else comment="📘 Don't worry, every topper started somewhere. Keep pushing!";
+  const overlay=document.createElement('div');
+  overlay.className='overlay';
+  overlay.innerHTML=`
+    <div class="board">
+      <h2>🏆 QUIZ SCOREBOARD</h2>
+      <div class="stat"><span>✅ Correct:</span><b>${state.correctCount}</b></div>
+      <div class="stat"><span>❌ Incorrect:</span><b>${state.wrongCount}</b></div>
+      <div class="stat"><span>🎯 Accuracy:</span><b>${acc}%</b></div>
+      <div class="comment">${comment}</div>
+      <button class="btn" id="continueBtn">${isLast?"See Final Result 🏁":"Continue ➡️"}</button>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+  document.getElementById('continueBtn').onclick=()=>{
+    overlay.remove();
+    if(isLast){renderFinal();}else{renderQuestion();}
+  };
+}
+
+function renderFinal(){
+  const total=state.correctCount+state.wrongCount;
+  const acc=total>0?Math.round((state.correctCount/total)*100):0;
+  let grade;
+  if(acc>=85)grade="🏆 TOPPER";
+  else if(acc>=65)grade="🥈 STRONG";
+  else if(acc>=40)grade="🥉 GROWING";
+  else grade="📘 KEEP GOING";
+  app.innerHTML=`
+    <div class="hero">
+      <h1>${grade}</h1>
+      <p>${state.name}, here's your final performance!</p>
+    </div>
+    <div class="card center">
+      <div class="stat" style="font-size:18px;margin:10px 0;">🏅 Final Score: <b>${state.score}</b></div>
+      <div class="stat" style="font-size:16px;margin:10px 0;">✅ Correct: ${state.correctCount} &nbsp; ❌ Incorrect: ${state.wrongCount}</div>
+      <div class="stat" style="font-size:16px;margin:10px 0;">🎯 Accuracy: ${acc}%</div>
+      <button class="btn" id="restartBtn">🔄 Restart Quiz / फिर से शुरू करें</button>
+    </div>
+  `;
+  document.getElementById('restartBtn').onclick=()=>{
+    state.idx=0;state.score=0;state.correctCount=0;state.wrongCount=0;
+    renderStart();
+  };
+}
+
+renderStart();
+
+</script>
+</body>
+</html>
